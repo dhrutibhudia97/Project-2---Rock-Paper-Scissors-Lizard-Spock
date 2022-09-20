@@ -14,8 +14,8 @@ body {
     padding: 20px;
 }
 
-.result-text {
-    font-size: 40px;
+#result-text {
+    font-size: 1.8rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
 
@@ -82,3 +82,4 @@ body {
     color: #ff0000;
     font-weight: bold;
 }
+

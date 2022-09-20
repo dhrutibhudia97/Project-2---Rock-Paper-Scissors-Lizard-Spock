@@ -10,21 +10,6 @@ function getComputerChoice() {
     return choice[randomChoice];
 }
 
-function won(userChoice, computerChoice) {
-    console.log("CONGRATS. YOU WON!");
-    incrementUserScore();
-}
-
-function lost() {
-    console.log("AWWW. YOU LOST! :(");
-    incrementComputerScore();
-}
-
-function draw () {
-    console.log("IT'S A DRAW.")
-}
-
-
 
 function game(userChoice) {
     const computerChoice = getComputerChoice(); 
@@ -62,6 +47,21 @@ function game(userChoice) {
             break; 
     } 
 }
+function won(userChoice, computerChoice) {
+    console.log("CONGRATS. YOU WON!");
+    incrementUserScore();
+    document.getElementById("result-text").innerHTML = (userChoice + " beats " + computerChoice + ". CONGRATS YOU WIN!");
+}
+
+function lost() {
+    console.log("AWWW. YOU LOST! :(");
+    incrementComputerScore();
+}
+
+function draw () {
+    console.log("IT'S A DRAW.")
+}
+
 
 
 
