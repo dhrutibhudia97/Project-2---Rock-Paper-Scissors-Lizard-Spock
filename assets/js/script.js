@@ -38,6 +38,7 @@ function game(userChoice) {
         case "spockrock":
         case "spockscissors":
             won();
+            incrementUserScore();
             break;
         case "scissorsspock":
         case "scissorsrock":
@@ -85,3 +86,8 @@ function main() {
 }
 
 main();
+
+function incrementUserScore () {
+    let oldScore = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++oldScore;
+}
