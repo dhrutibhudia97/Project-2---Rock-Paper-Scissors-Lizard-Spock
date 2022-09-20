@@ -10,12 +10,14 @@ function getComputerChoice() {
     return choice[randomChoice];
 }
 
-function won() {
-    console.log("CONGRATS. YOU WON!")
+function won(userChoice, computerChoice) {
+    console.log("CONGRATS. YOU WON!");
+    incrementUserScore();
 }
 
 function lost() {
-    console.log("AWWW. YOU LOST! :(")
+    console.log("AWWW. YOU LOST! :(");
+    incrementComputerScore();
 }
 
 function draw () {
@@ -38,7 +40,6 @@ function game(userChoice) {
         case "spockrock":
         case "spockscissors":
             won();
-            incrementUserScore();
             break;
         case "scissorsspock":
         case "scissorsrock":
@@ -51,7 +52,6 @@ function game(userChoice) {
         case "spockpaper":
         case "spockslizard":
             lost();
-            incrementComputerScore();
             break;
         case "scissorsscissors":
         case "paperpaper":
