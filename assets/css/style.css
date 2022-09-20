@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
     background-color: rgb(201, 223, 232);
     font-family: stylus, sans-serif;
@@ -5,18 +6,53 @@ body {
     text-align: center;
 }
 
-/* --------- Heading */
+/* Heading */
 
 .heading {
     text-align: center;
     font-size: 3rem;
+    padding: 20px;
 }
 
+
+/* Button Styling */
 .button {
     font-size: 90px;
     border-radius: 50%;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     width: 140px;
     height: 140px;
     text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    color:#00008b;
+}
+.button > p {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #00008b;
+}
+
+.button :hover {
+    color: rgb(30, 124, 30);
+    font-size: 112%;
+}
+.button:hover > p {
+    font-size: 25px;
+    text-transform: uppercase;
+   
+   
+}
+
+.button :active {
+    color: rgba(21, 88, 21, 0.7);
+    
+}
+
+
+
+/* Score Area styling */
+.score-area {
+    padding: 40px;
 }
