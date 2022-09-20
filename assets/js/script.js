@@ -51,6 +51,7 @@ function game(userChoice) {
         case "spockpaper":
         case "spockslizard":
             lost();
+            incrementComputerScore();
             break;
         case "scissorsscissors":
         case "paperpaper":
@@ -90,4 +91,9 @@ main();
 function incrementUserScore () {
     let oldScore = parseInt(document.getElementById("user-score").innerText);
     document.getElementById("user-score").innerText = ++oldScore;
+}
+
+function incrementComputerScore () {
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldScore;
 }
