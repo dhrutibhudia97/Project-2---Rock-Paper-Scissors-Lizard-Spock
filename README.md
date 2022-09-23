@@ -47,3 +47,19 @@ At the bottom of the screen the results score, either gaining one to the user sc
 This site was deployed on Github.
 setting --> pages --> deploy from branch --> main and /root --> site deployed with live link :
 
+[insert live link here]
+
+## Credits
+
+### Content
+
+### Technologies
+- HTML
+- CSS
+- JavaScript 
+- HTML Validator - [link]
+- CSS Validator - [link]
+- JavaScript Validator - [link]
+- Fontawesome - [link]
+
+### Acknowledgements
