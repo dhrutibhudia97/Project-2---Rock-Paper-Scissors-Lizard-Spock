@@ -10,6 +10,26 @@ function getComputerChoice() {
     return choice[randomChoice];
 }
 
+ //user clicking each option recognised by console.
+ function main() {
+    document.getElementById("rock").addEventListener("click", function() {
+        game("rock"); 
+    })
+    document.getElementById("paper").addEventListener("click", function() {
+        game("paper"); 
+    })
+    document.getElementById("scissors").addEventListener("click", function() {
+        game("scissors"); 
+    })
+    document.getElementById("lizard").addEventListener("click", function() {
+        game("lizard"); 
+    })
+    document.getElementById("spock").addEventListener("click", function() {
+        game("lizard"); 
+    })
+}
+
+main();
 
 function game(userChoice) {
     const computerChoice = getComputerChoice(); 
@@ -53,40 +73,18 @@ function won(userChoice, computerChoice) {
     document.getElementById("result-text").innerHTML = (userChoice + " beats " + computerChoice + ". CONGRATS YOU WIN!");
 }
 
-function lost() {
+function lost(computerChoice, userChoice) {
     console.log("AWWW. YOU LOST! :(");
     incrementComputerScore();
+    document.getElementById("result-text").innerHTML = (computerChoice + " beats " + userChoice + ". AWW. YOU LOSE :("); 
 }
 
-function draw () {
-    console.log("IT'S A DRAW.")
+function draw (userChoice) {
+    console.log("IT'S A DRAW.");
+    document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
 }
 
 
-
-
-
-
- //user clicking each option recognised by console.
-function main() {
-    document.getElementById("rock").addEventListener("click", function() {
-        game("rock"); 
-    })
-    document.getElementById("paper").addEventListener("click", function() {
-        game("paper"); 
-    })
-    document.getElementById("scissors").addEventListener("click", function() {
-        game("scissors"); 
-    })
-    document.getElementById("lizard").addEventListener("click", function() {
-        game("lizard"); 
-    })
-    document.getElementById("spock").addEventListener("click", function() {
-        game("lizard"); 
-    })
-}
-
-main();
 
 function incrementUserScore () {
     let oldScore = parseInt(document.getElementById("user-score").innerText);
