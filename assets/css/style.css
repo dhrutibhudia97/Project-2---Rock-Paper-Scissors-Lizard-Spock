@@ -45,16 +45,11 @@ body {
     
 }
 .button:hover > p {
-    font-size: 25px;
-    text-transform: uppercase;
-    
-   
-   
-}
+    text-decoration: double;
+} 
 
 .button :active {
-    color: rgba(21, 88, 21, 0.7);
-    
+    color: rgba(21, 88, 21, 0.7);    
 }
 
 
@@ -82,3 +77,38 @@ body {
     font-weight: bold;
 }
 
+
+/* --------- Media queries */
+
+@media (max-width: 453px) {
+
+
+
+    /* Heading */
+
+.heading {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+#result-text {
+    font-size: 1.2rem;
+}
+
+
+
+
+.score-area {
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+
+.scores {
+    padding: 10px;
+}
+
+
+
+
+
+}
