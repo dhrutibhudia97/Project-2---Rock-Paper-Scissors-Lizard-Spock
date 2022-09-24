@@ -4,7 +4,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #074279;
     text-align: center;
-    margin: 15px;
+    margin: 8px 12px;
 }
 
 /* Heading */
@@ -12,13 +12,14 @@ body {
 .heading {
     text-align: center;
     font-size: 3rem;
-    padding: 20px;
+    padding: 15px;
 }
 
-#result-text {
+#result-text, #user-prompt {
     font-size: 1.8rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
+    
 
 }
 
@@ -85,16 +86,14 @@ body {
 
 @media (max-width: 507px) {
 
-
-
-    /* Heading */
+/* Heading */
 
 .heading {
     font-size:1.8rem;
     padding: 10px;
 }
 
-#result-text {
+#result-text, #user-prompt {
     font-size: 1.1rem;
 }
 
@@ -146,7 +145,7 @@ body {
     }
 
 
-    #result-text {
+    #result-text, #user-prompt {
         font-size: 0.9rem;
     }
 
