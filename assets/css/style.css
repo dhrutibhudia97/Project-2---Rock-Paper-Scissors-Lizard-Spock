@@ -1,9 +1,10 @@
 /* General Body Styling */
 body {
-    background-color: rgb(201, 223, 232);
+    background-color: rgb(227, 202, 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #074279;
     text-align: center;
+    margin: 15px;
 }
 
 /* Heading */
@@ -43,8 +44,9 @@ body {
 
 .button :hover {
     color: rgb(30, 124, 30);
-    
+    transition: 0.3s;
 }
+
 .button:hover > p {
     text-decoration: double;
 } 
@@ -81,7 +83,7 @@ body {
 
 /* --------- Media queries */
 
-@media (max-width: 453px) {
+@media (max-width: 507px) {
 
 
 
@@ -101,7 +103,6 @@ body {
 .button {
     font-size: 55px;
     margin: 15px 15px;
-    padding: 7px;
     width: 90px;
     height: 90px;
     padding: 15px;
@@ -109,7 +110,7 @@ body {
 
 .button > p {
     font-size: 18px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 
@@ -136,7 +137,27 @@ body {
 }
 
 
+}
+/*Media queries for screens smaller than 390px */
+@media (max-width: 390px) {
+    .heading {
+        font-size:1.4rem;
+        padding: 10px;
+    }
 
 
+    #result-text {
+        font-size: 0.9rem;
+    }
 
+    .button {
+        font-size: 40px;
+        margin: 10px 10px 23px;
+        width: 70px;
+        height: 70px;
+        /*padding: 15px; */
+    }
+    .button > p {
+        font-size: 16px;
+    }
 }
