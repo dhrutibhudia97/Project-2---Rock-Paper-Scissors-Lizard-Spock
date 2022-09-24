@@ -5,7 +5,7 @@ let button = document.getElementsByTagName("button");
 
 //computer random choice is generated
 function getComputerChoice() {
-    const choice = ["rock", "paper", "scissors", "lizard", "spock"];
+    const choice = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     const randomChoice = [Math.floor(Math.random() * choice.length)];
     return choice[randomChoice];
 }
@@ -13,19 +13,19 @@ function getComputerChoice() {
  //user clicking each option recognised by console.
  function main() {
     document.getElementById("rock").addEventListener("click", function() {
-        game("rock"); 
+        game("Rock"); 
     })
     document.getElementById("paper").addEventListener("click", function() {
-        game("paper"); 
+        game("Paper"); 
     })
     document.getElementById("scissors").addEventListener("click", function() {
-        game("scissors"); 
+        game("Scissors"); 
     })
     document.getElementById("lizard").addEventListener("click", function() {
-        game("lizard"); 
+        game("Lizard"); 
     })
     document.getElementById("spock").addEventListener("click", function() {
-        game("lizard"); 
+        game("Spock"); 
     })
 }
 
@@ -34,35 +34,35 @@ main();
 function game(userChoice) {
     const computerChoice = getComputerChoice(); 
     switch (userChoice + computerChoice) {
-        case "scissorspaper":
-        case "scissorslizard":
-        case "paperrock":
-        case "paperspock":
-        case "rockscissors":
-        case "rocklizard":
-        case "lizardpaper":
-        case "lizardspock":
-        case "spockrock":
-        case "spockscissors":
+        case "ScissorsPaper":
+        case "ScissorsLizard":
+        case "PaperRock":
+        case "PaperSpock":
+        case "RockScissors":
+        case "RockLizard":
+        case "LizardPaper":
+        case "LizardSpock":
+        case "SpockRock":
+        case "SpockScissors":
             won(userChoice, computerChoice);
             break;
-        case "scissorsspock":
-        case "scissorsrock":
-        case "paperscissors":
-        case "paperlizard":
-        case "rockspock":
-        case "rockpaper":
-        case "lizardscissors":
-        case "lizardrock":
-        case "spockpaper":
-        case "spockslizard":
+        case "ScissorsSpock":
+        case "ScissorsRock":
+        case "PaperScissors":
+        case "PaperLizard":
+        case "RockSpock":
+        case "RockPaper":
+        case "LizardScissors":
+        case "LizardRock":
+        case "SpockPaper":
+        case "SpocksLizard":
             lost(userChoice, computerChoice);
             break;
-        case "scissorsscissors":
-        case "paperpaper":
-        case "rockrock":
-        case "lizardlizard":
-        case "spockspock":
+        case "ScissorsScissors":
+        case "PaperPaper":
+        case "RockRock":
+        case "LizardLizard":
+        case "SpockSpock":
             draw(userChoice, computerChoice);
             break; 
     } 
@@ -70,14 +70,14 @@ function game(userChoice) {
 function won(userChoice, computerChoice) {
     console.log("CONGRATS. YOU WIN!");
     incrementUserScore();
-    /*document.getElementById("result-text").innerHTML = (userChoice + " beats " + computerChoice + ". CONGRATS YOU WIN!");*/
-    document.querySelector("#result-text").innerHTML = ((userChoice) + " beats " + (computerChoice) + ". CONGRATS YOU WIN!");
+    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the computer picked " + computerChoice + ". CONGRATS YOU WIN :D");
+    
 }
 
 function lost(computerChoice, userChoice) {
     console.log("AWWW. YOU LOSE! :(");
     incrementComputerScore();
-    document.getElementById("result-text").innerHTML = (computerChoice + " beats " + userChoice + ". AWW. YOU LOSE :("); 
+    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the computer picked " + computerChoice + ". AWW YOU LOSE :(");
 }
 
 function draw (userChoice) {
