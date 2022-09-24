@@ -44,7 +44,7 @@ function game(userChoice) {
         case "lizardspock":
         case "spockrock":
         case "spockscissors":
-            won();
+            won(userChoice, computerChoice);
             break;
         case "scissorsspock":
         case "scissorsrock":
@@ -56,25 +56,26 @@ function game(userChoice) {
         case "lizardrock":
         case "spockpaper":
         case "spockslizard":
-            lost();
+            lost(userChoice, computerChoice);
             break;
         case "scissorsscissors":
         case "paperpaper":
         case "rockrock":
         case "lizardlizard":
         case "spockspock":
-            draw();
+            draw(userChoice, computerChoice);
             break; 
     } 
 }
 function won(userChoice, computerChoice) {
-    console.log("CONGRATS. YOU WON!");
+    console.log("CONGRATS. YOU WIN!");
     incrementUserScore();
-    document.getElementById("result-text").innerHTML = (userChoice + " beats " + computerChoice + ". CONGRATS YOU WIN!");
+    /*document.getElementById("result-text").innerHTML = (userChoice + " beats " + computerChoice + ". CONGRATS YOU WIN!");*/
+    document.querySelector("#result-text").innerHTML = ((userChoice) + " beats " + (computerChoice) + ". CONGRATS YOU WIN!");
 }
 
 function lost(computerChoice, userChoice) {
-    console.log("AWWW. YOU LOST! :(");
+    console.log("AWWW. YOU LOSE! :(");
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = (computerChoice + " beats " + userChoice + ". AWW. YOU LOSE :("); 
 }
@@ -83,7 +84,6 @@ function draw (userChoice) {
     console.log("IT'S A DRAW.");
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
 }
-
 
 
 function incrementUserScore () {
