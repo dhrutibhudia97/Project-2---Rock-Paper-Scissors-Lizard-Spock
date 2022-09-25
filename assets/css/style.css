@@ -33,12 +33,10 @@ body {
 .button {
     font-size: 90px;
     border-radius: 50%;
-    margin: 5px 10px;
-    padding: 5px;
+    margin: 15px 10px;
+    padding: 18px;
     width: 140px;
     height: 140px;
-    text-align: center;
-    
     background-color: #ffffff;
     color:#00008b;
 }
@@ -48,6 +46,8 @@ body {
     text-transform: uppercase;
     color: #00008b;
     text-align: center;
+    display: block;
+    margin-top: 21px;
 }
 
 .button :hover {
@@ -130,9 +130,10 @@ body {
         padding: 15px;
 }
 
-    .button > p {
+    .button-text {
         font-size: 18px;
-        /*text-align: center;*/
+        text-align: center;
+        margin-top: 15px;
 }
 
 /* Score area */
@@ -175,9 +176,9 @@ body {
         margin: 10px 10px 23px;
         width: 70px;
         height: 70px;
-        /*padding: 15px; */
+        padding: 15px; 
     }
-    .button > p {
+    .button-text {
         font-size: 16px;
     }
 }
