@@ -70,14 +70,14 @@ function game(userChoice) {
 function won(userChoice, computerChoice) {
     console.log("CONGRATS. YOU WIN!");
     incrementUserScore();
-    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the computer picked " + computerChoice + ". CONGRATS YOU WIN :D");
+    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");
     
 }
 
 function lost(userChoice, computerChoice) {
     console.log("AWWW. YOU LOSE! :(");
     incrementComputerScore();
-    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the computer picked " + computerChoice + ". AWW YOU LOSE :(");
+    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". AWW YOU LOSE :(");
 }
 
 function draw (userChoice, computerChoice) {

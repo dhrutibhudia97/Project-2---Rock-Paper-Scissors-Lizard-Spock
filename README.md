@@ -38,13 +38,15 @@ At the bottom of the screen the results score, either gaining one to the user sc
 - Lighthouse accessibility score
 ### Fixed Bugs
 - In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
+
+- Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so results text always displays the correct users choice.
 ### Unfixed bugs
 - In results score message, the user/computer option is noted as "undefined" in the message.
 
 - Plagerism is currently 47.2% when check... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
 
 - need to check media queries for smaller screens (seems fine when on phone - could potentially make buttons slightly smaller so user doesn't scroll down as much to view all options/score.)
-- Clicking buttons sometimes displays user choice incorrectly.
+
 
 
 ### Deployment

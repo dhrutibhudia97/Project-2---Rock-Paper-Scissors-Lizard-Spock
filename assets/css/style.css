@@ -21,6 +21,11 @@ body {
     color: #000000;
 }
 
+#result-text {
+    color: #b14a00;
+    transition:3s;
+}
+
 /* Button Styling */
 .button {
     font-size: 90px;
