@@ -12,19 +12,19 @@ function getComputerChoice() {
 
  //user clicking each option recognised by console.
  function main() {
-    document.getElementById("rock").addEventListener("click", function() {
+    document.getElementById("Rock").addEventListener("click", function() {
         game("Rock"); 
     })
-    document.getElementById("paper").addEventListener("click", function() {
+    document.getElementById("Paper").addEventListener("click", function() {
         game("Paper"); 
     })
-    document.getElementById("scissors").addEventListener("click", function() {
+    document.getElementById("Scissors").addEventListener("click", function() {
         game("Scissors"); 
     })
-    document.getElementById("lizard").addEventListener("click", function() {
+    document.getElementById("Lizard").addEventListener("click", function() {
         game("Lizard"); 
     })
-    document.getElementById("spock").addEventListener("click", function() {
+    document.getElementById("Spock").addEventListener("click", function() {
         game("Spock"); 
     })
 }
@@ -55,7 +55,7 @@ function game(userChoice) {
         case "LizardScissors":
         case "LizardRock":
         case "SpockPaper":
-        case "SpocksLizard":
+        case "SpockLizard":
             lost(userChoice, computerChoice);
             break;
         case "ScissorsScissors":
@@ -74,13 +74,13 @@ function won(userChoice, computerChoice) {
     
 }
 
-function lost(computerChoice, userChoice) {
+function lost(userChoice, computerChoice) {
     console.log("AWWW. YOU LOSE! :(");
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the computer picked " + computerChoice + ". AWW YOU LOSE :(");
 }
 
-function draw (userChoice) {
+function draw (userChoice, computerChoice) {
     console.log("IT'S A DRAW.");
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
 }
