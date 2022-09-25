@@ -1,10 +1,14 @@
 /* General Body Styling */
 body {
-    background-color: rgb(227, 202, 236);
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #074279;
     text-align: center;
     margin: 10px 15px;
+}
+
+#game-area {
+    background-color: rgb(231, 203, 241);
 }
 
 /* Heading Styling */
@@ -12,6 +16,7 @@ body {
     text-align: center;
     font-size: 3rem;
     padding: 15px;
+    color: rgb(128, 0, 128);
 }
 
 /* Text Styling */
@@ -46,7 +51,7 @@ body {
 }
 
 .button :hover {
-    color: rgb(30, 124, 30);
+    color: #016e01; 
     transition: 0.3s;
 }
 
@@ -68,28 +73,28 @@ body {
 .scores {
     display: inline-block;
     padding: 15px;
-    color: rgb(78, 78, 78);
+    color: rgb(37, 37, 37);
 }
 
 #user-score {
-    color: #008000;
+    color: #016e01; 
     font-weight: bold;
 }
 
 #computer-score {
-    color: #ff0000;
+    color:#c50505;
     font-weight: bold;
 }
 
 .user-win {
-    border: 5px solid #008000;
-    color: #008000; 
+    border: 5px solid #016e01;
+    color: #016e01; 
     transition: 0.2s;   
 }
 
 .user-lose {
-    border: 5px solid #ff0000;
-    color: #ff0000;
+    border: 5px solid #c50505;
+    color: #c50505;
     transition: 0.2s; 
     
 }
