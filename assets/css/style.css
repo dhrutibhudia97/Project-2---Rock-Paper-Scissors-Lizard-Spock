@@ -16,15 +16,13 @@ body {
 
 /* Text Styling */
 #result-text, #user-prompt {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
+    padding-top: 15px;
 }
 
-#result-text {
-    color: #b14a00;
-    transition:3s;
-}
+
 
 /* Button Styling */
 .button {
@@ -69,7 +67,7 @@ body {
 
 .scores {
     display: inline-block;
-    padding: 25px;
+    padding: 15px;
     color: rgb(78, 78, 78);
 }
 
@@ -81,6 +79,25 @@ body {
 #computer-score {
     color: #ff0000;
     font-weight: bold;
+}
+
+.user-win {
+    border: 5px solid #008000;
+    color: #008000; 
+    transition: 0.2s;   
+}
+
+.user-lose {
+    border: 5px solid #ff0000;
+    color: #ff0000;
+    transition: 0.2s; 
+    
+}
+
+.user-draw {
+    border: 5px solid rgb(128, 0, 128);
+    color: rgb(128, 0, 128);
+    transition: 0.2s; 
 }
 
 
@@ -139,7 +156,7 @@ body {
 
 @media (max-width: 390px) {
     .heading {
-        font-size:1.6rem;
+        font-size:1.4rem;
         padding: 10px;
     }
 

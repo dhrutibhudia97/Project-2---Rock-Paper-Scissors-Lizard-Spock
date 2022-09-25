@@ -68,21 +68,26 @@ function game(userChoice) {
     } 
 }
 function won(userChoice, computerChoice) {
-    console.log("CONGRATS. YOU WIN!");
+    /*console.log("CONGRATS. YOU WIN!");*/
     incrementUserScore();
-    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");
-    
+    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");   
+    document.getElementById(userChoice).classList.add("user-win");
+    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-win")},500);
 }
 
 function lost(userChoice, computerChoice) {
-    console.log("AWWW. YOU LOSE! :(");
+    /*console.log("AWWW. YOU LOSE! :(");*/
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". AWW YOU LOSE :(");
+    document.getElementById(userChoice).classList.add("user-lose");
+    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-lose")},500);
 }
 
 function draw (userChoice, computerChoice) {
-    console.log("IT'S A DRAW.");
+    /*console.log("IT'S A DRAW."); */
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
+    document.getElementById(userChoice).classList.add("user-draw");
+    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-draw")},500);
 }
 
 
