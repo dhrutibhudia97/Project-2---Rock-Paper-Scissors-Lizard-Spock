@@ -49,24 +49,27 @@ No significant errors when passed though the Jshint javascript validator.
 - Lighthouse Accessibility score
 A score of 100 for accessibility on lighthouse.
 ![image](https://user-images.githubusercontent.com/107180641/192371205-2b264f17-fc1b-49ae-85f9-27465b62e3a4.png)
+
 ### Fixed Bugs
 - In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
 
 - Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so results text always displays the correct users choice.
+
 ### Unfixed bugs
-- In results score message, the user/computer option is noted as "undefined" in the message.
-
 - Plagerism is currently 47.2% when check... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
-
-- need to check media queries for smaller screens (seems fine when on phone - could potentially make buttons slightly smaller so user doesn't scroll down as much to view all options/score.)
-
 
 
 ### Deployment
-This site was deployed on Github.
-setting --> pages --> deploy from branch --> main and /root --> site deployed with live link :
+This site was successfully deployed on Github.
+The following steps were taken to deploy the site:
 
-[insert live link here]
+- In Github, navigate to 'Settings' at the top of the screen.
+- Then navigate to 'Pages' on the menu to the left of the screen.
+- From the Source section, select 'Deploy from a branch.'
+- For Branch, select 'Main' and '/(root)'.
+ 
+This live link to the website:
+https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 ## Credits
 
