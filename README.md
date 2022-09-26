@@ -7,22 +7,31 @@ This game is for people who want to play the more complicated version of rock pa
 ## Features
 
 - __Title__
+At the top of the page, with a white background, easily visible with enough contrast. Changes size with screen size.
 
 - __Buttons__
-Five button for each option (rock, paper, scissors, lizard and spock) for users to click, has an event listener for a "click" so the console recognises when they make their choice. 
+Five button for each option (rock, paper, scissors, lizard and spock) for users to click, has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option.
     -__Icons__
     Icons from fontawesome used for each button, so its visibly clear which button is which option, text underneath button to support this.
 
 -__Computer Generated Answer__
 This then is compared with the computers randomly generated choice (using Maths.random and Maths.floor functions). 
+
 - __Generated Results__
 A switch case is used to determined the outcome of the game. 
 
 -__Results Text__
 Results will be displayed as text at the top of the screen, with the "userOption beat computerOption" if user win, "computerOption beats userOption" if computer wins, or "You both picked userOption" if its a draw.
 
+-__User Prompt Text__ 
+Users see it when they first enter the page, short easy to read sentence that allows users to know that to start the game, they just need to click an icon.
+
 - __Increments user/computer score__
 At the bottom of the screen the results score, either gaining one to the user score if the user wins, gaining one to the computer score if the computer wins or no changes to the score made if it's a draw.
+
+-__Buttons border change__
+Border of buttons change colour for 500 milliseconds depending on game result. Green for win, Red for lose and purple for draw.
+
 
 
 ## Testing
@@ -56,7 +65,7 @@ A score of 100 for accessibility on lighthouse.
 - Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so results text always displays the correct users choice.
 
 ### Unfixed bugs
-- Plagerism is currently 47.2% when check... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
+- Plagerism is currently 39.1% for javascript file when checked... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
 
 
 ### Deployment
@@ -84,4 +93,5 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 - JavaScript Validator - [link]
 - Fontawesome - [link]
 - CopyLeaks - [link]
+
 ### Acknowledgements
