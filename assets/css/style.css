@@ -19,7 +19,6 @@
 /* Text Styling */
  #result-text, #user-prompt {
      font-size: 1.6rem;
-     font-family:Verdana, Geneva, Tahoma, sans-serif;
      color: #000000;
      padding-top: 15px;
 }
@@ -42,6 +41,7 @@
      text-align: center;
      display: block;
      margin-top: 21px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  .button :hover {
      color: #016e01;
