@@ -31,9 +31,16 @@ At the bottom of the screen the results score, either gaining one to the user sc
 
 - Check all features work.
 
-###Validator Testing
-- HTML
-- CSS
+### Validator Testing
+- HTML Validator
+No errors were found when using the HTML validator. 
+![image](https://user-images.githubusercontent.com/107180641/192340150-4d6e3533-c8da-43e3-9f05-16231e6474ab.png)
+
+
+- CSS Validator
+No errors were found when using the CSS validator.
+![image](https://user-images.githubusercontent.com/107180641/192340268-3689a733-60b7-4d39-a61d-364b6e8da19a.png)
+
 - JavaScript
 - Lighthouse accessibility score
 ### Fixed Bugs
