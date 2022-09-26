@@ -46,7 +46,9 @@ No significant errors when passed though the Jshint javascript validator.
 ![image](https://user-images.githubusercontent.com/107180641/192344822-5da4fdd6-2fec-4a74-9ca8-8ee118f52a0c.png)
 
 
-- Lighthouse accessibility score
+- Lighthouse Accessibility score
+A score of 100 for accessibility on lighthouse.
+![image](https://user-images.githubusercontent.com/107180641/192371205-2b264f17-fc1b-49ae-85f9-27465b62e3a4.png)
 ### Fixed Bugs
 - In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
 
