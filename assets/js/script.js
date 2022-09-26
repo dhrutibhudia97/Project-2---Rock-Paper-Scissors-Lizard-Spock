@@ -1,3 +1,4 @@
+
 //Wait for the DOM to finish loading before running game.
 /*document.addEventListener("DOMContentLoaded", function() {
 let button = document.getElementsByTagName("button");
@@ -83,7 +84,7 @@ function lost(userChoice, computerChoice) {
     setTimeout(function() {document.getElementById(userChoice).classList.remove("user-lose");},500);
 }
 
-function draw (userChoice, computerChoice) {
+function draw (userChoice) {
     /*console.log("IT'S A DRAW."); */
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
     document.getElementById(userChoice).classList.add("user-draw");

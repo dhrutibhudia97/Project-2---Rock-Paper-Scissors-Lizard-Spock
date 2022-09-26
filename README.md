@@ -33,15 +33,19 @@ At the bottom of the screen the results score, either gaining one to the user sc
 
 ### Validator Testing
 - HTML Validator
-No errors were found when using the HTML validator. 
+No errors were found when passed through the W3C HTML validator. 
 ![image](https://user-images.githubusercontent.com/107180641/192340150-4d6e3533-c8da-43e3-9f05-16231e6474ab.png)
 
 
 - CSS Validator
-No errors were found when using the CSS validator.
+No errors were found when passed through the Jigsaw CSS validator.
 ![image](https://user-images.githubusercontent.com/107180641/192340268-3689a733-60b7-4d39-a61d-364b6e8da19a.png)
 
 - JavaScript
+No significant errors when passed though the Jshint javascript validator.
+![image](https://user-images.githubusercontent.com/107180641/192344822-5da4fdd6-2fec-4a74-9ca8-8ee118f52a0c.png)
+
+
 - Lighthouse accessibility score
 ### Fixed Bugs
 - In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
