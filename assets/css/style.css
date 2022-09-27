@@ -1,160 +1,186 @@
 /* General Body Styling */
- body {
-     background-color: #ffffff;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: #074279;
-     text-align: center;
-     margin: 10px 15px;
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #074279;
+    text-align: center;
+    margin: 10px 15px;
 }
- #game-area {
-     background-color: rgb(231, 203, 241);
+
+#game-area {
+    background-color: rgb(231, 203, 241);
 }
+
 /* Heading Styling */
- .heading {
-     text-align: center;
-     font-size: 3rem;
-     padding: 15px;
-     color: rgb(128, 0, 128);
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 15px;
+    color: rgb(128, 0, 128);
 }
+
 /* Text Styling */
- #result-text, #user-prompt {
-     font-size: 1.6rem;
-     color: #000000;
-     padding-top: 15px;
+#result-text, #user-prompt {
+    font-size: 1.6rem;
+    color: #000000;
+    padding-top: 15px;
 }
+
 /* Button Styling */
- .button {
-     font-size: 90px;
-     border-radius: 50%;
-     margin: 22px 10px;
-     padding: 18px;
-     width: 140px;
-     height: 140px;
-     background-color: #ffffff;
-     color:#00008b;
-     border: 3px solid #000000;
+.button {
+    font-size: 90px;
+    border-radius: 50%;
+    margin: 22px 10px;
+    padding: 18px;
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;
+    color:#00008b;
+    border: 3px solid #000000;
 }
- .button-text {
-     font-size: 25px;
-     text-transform: uppercase;
-     color: #00008b;
-     text-align: center;
-     display: block;
-     margin-top: 21px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.button-text {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #00008b;
+    text-align: center;
+    display: block;
+    margin-top: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
- .button :hover {
-     color: #016e01;
-     transition: 0.3s;
+
+.button :hover {
+    color: #016e01;
+    transition: 0.3s;
 }
- .button:hover > p {
-     text-decoration: double;
+
+.button:hover > p {
+    text-decoration: double;
 }
- .button :active {
-     color: rgba(21, 88, 21, 0.7);
+
+.button :active {
+    color: rgba(21, 88, 21, 0.7);
 }
+
 /* Score Area styling */
- .score-area {
-     margin: 20px auto;
-     width: 75%;
-     font-size: 25px;
+.score-area {
+    margin: 20px auto;
+    width: 75%;
+    font-size: 25px;
 }
- .scores {
-     display: inline-block;
-     padding: 15px;
-     color: rgb(37, 37, 37);
+
+.scores {
+    display: inline-block;
+    padding: 15px;
+    color: rgb(37, 37, 37);
 }
- #user-score {
-     color: #016e01;
-     font-weight: bold;
+
+#user-score {
+    color: #016e01;
+    font-weight: bold;
 }
- #computer-score {
-     color:#c50505;
-     font-weight: bold;
+
+#computer-score {
+    color:#c50505;
+    font-weight: bold;
 }
+
 /* Button Change styling */
- .user-win {
-     border: 5px solid #016e01;
-     color: #016e01;
-     transition: 0.2s;
+.user-win {
+    border: 5px solid #016e01;
+    color: #016e01;
+    transition: 0.2s;
 }
- .user-lose {
-     border: 5px solid #c50505;
-     color: #c50505;
-     transition: 0.2s;
+
+.user-lose {
+    border: 5px solid #c50505;
+    color: #c50505;
+    transition: 0.2s;
 }
- .user-draw {
-     border: 5px solid rgb(128, 0, 128);
-     color: rgb(128, 0, 128);
-     transition: 0.2s;
+
+.user-draw {
+    border: 5px solid rgb(128, 0, 128);
+    color: rgb(128, 0, 128);
+    transition: 0.2s;
 }
 
 /* Media queries for screens smaller than 507px */
- @media (max-width: 507px) {
+@media (max-width: 507px) {
     /* Heading */
-     .heading {
-         font-size:1.8rem;
-         padding: 10px;
+    .heading {
+        font-size:1.8rem;
+        padding: 10px;
     }
+
     /* Text Styling */
-     #result-text, #user-prompt {
-         font-size: 1.1rem;
+    #result-text, #user-prompt {
+        font-size: 1.1rem;
     }
+
     /* Button Styling */
-     .button {
-         font-size: 55px;
-         margin: 15px 15px;
-         width: 90px;
-         height: 90px;
-         padding: 15px;
+    .button {
+        font-size: 55px;
+        margin: 15px 15px;
+        width: 90px;
+        height: 90px;
+        padding: 15px;
     }
-     .button-text {
-         font-size: 18px;
-         text-align: center;
-         margin-top: 15px;
+
+    .button-text {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
     }
+
     /* Score area */
-     .score-area {
-         margin: 18px auto 6px;
-         font-size: 1.1rem;
+    .score-area {
+        margin: 18px auto 6px;
+        font-size: 1.1rem;
     }
-     .scores {
-         padding: 7px;
-         margin: 10px;
-         display: block;
+
+    .scores {
+        padding: 7px;
+        margin: 10px;
+        display: block;
     }
-     .scores > p {
-         margin: 10px;
+
+    .scores > p {
+        margin: 10px;
     }
-     #computer-score {
-         margin-top: 5px;
+
+    #computer-score {
+        margin-top: 5px;
     }
 }
 
 /*Media queries for screens smaller than 390px */
  @media (max-width: 390px) {
     /*Heading */
-     .heading {
-         font-size:1.4rem;
-         padding: 10px;
+    .heading {
+        font-size:1.4rem;
+        padding: 10px;
     }
+
     /*Text Styling */
-     #result-text, #user-prompt {
-         font-size: 1.1rem;
+    #result-text, #user-prompt {
+        font-size: 1.1rem;
     }
+
     /*Button Styling */
-     .button {
-         font-size: 40px;
-         margin: 10px 10px 23px;
-         width: 70px;
-         height: 70px;
-         padding: 15px;
+    .button {
+        font-size: 40px;
+        margin: 10px 10px 23px;
+        width: 70px;
+        height: 70px;
+        padding: 15px;
     }
-     .button-text {
-         font-size: 16px;
+
+    .button-text {
+        font-size: 16px;
     }
-     .score-area {
-         width: 85%;
+
+    .score-area {
+        width: 85%;
     }
 }
  
