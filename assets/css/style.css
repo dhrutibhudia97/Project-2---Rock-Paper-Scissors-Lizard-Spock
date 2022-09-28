@@ -35,7 +35,7 @@ body {
     width: 140px;
     height: 140px;
     background-color: #ffffff;
-    color:#00008b;
+    color:rgb(0, 0, 139, 0.7);
     border: 3px solid #000000;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .button :hover {
-    color: #016e01;
+    color: #00008b;
     transition: 0.3s;
 }
 
@@ -58,9 +58,9 @@ body {
     text-decoration: double;
 }
 
-.button :active {
+/*.button :active 
     color: rgba(21, 88, 21, 0.7);
-}
+} */
 
 /* Score Area styling */
 .score-area {
