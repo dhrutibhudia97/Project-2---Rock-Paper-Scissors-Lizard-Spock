@@ -66,6 +66,7 @@ A score of 100 for accessibility on lighthouse.
 
 ### Unfixed bugs
 - Plagerism is currently 39.1% for javascript file when checked... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
+- Button hover style over-rides the button results outcome style, the icon will only change colour depending on outcome if mouse is not hovering over the icon.
 
 
 ### Deployment

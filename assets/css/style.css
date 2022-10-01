@@ -40,6 +40,7 @@ body {
     height: 140px;
     background-color: #ffffff;
     color:rgb(0, 0, 139,0.6);
+    cursor: pointer;
 }
 
 .button-text {
@@ -59,10 +60,10 @@ body {
 .button:hover > p {
     text-decoration: double;
 } 
-/*
+
 .button :active {
     color: #00008b;   
-} */
+} 
 
 /* Score Area styling */
 .score-area {
@@ -134,7 +135,7 @@ body {
     .button-text {
         font-size: 18px;
         text-align: center;
-        margin-top: 15px;
+        margin: 15px -15px;
 }
 
 /* Score area */
