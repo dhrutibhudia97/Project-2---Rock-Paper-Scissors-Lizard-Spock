@@ -47,18 +47,6 @@ function game(userChoice) {
         case "SpockScissors":
             won(userChoice, computerChoice);
             break;
-        case "ScissorsSpock":
-        case "ScissorsRock":
-        case "PaperScissors":
-        case "PaperLizard":
-        case "RockSpock":
-        case "RockPaper":
-        case "LizardScissors":
-        case "LizardRock":
-        case "SpockPaper":
-        case "SpockLizard":
-            lost(userChoice, computerChoice);
-            break;
         case "ScissorsScissors":
         case "PaperPaper":
         case "RockRock":
@@ -66,6 +54,8 @@ function game(userChoice) {
         case "SpockSpock":
             draw(userChoice, computerChoice);
             break; 
+        default: 
+            lost(userChoice, computerChoice);
     } 
 }
 function won(userChoice, computerChoice) {
@@ -73,7 +63,7 @@ function won(userChoice, computerChoice) {
     incrementUserScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");   
     document.getElementById(userChoice).classList.add("user-win");
-    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-win");},500);
+    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-win");},600);
 }
 
 function lost(userChoice, computerChoice) {
@@ -81,14 +71,14 @@ function lost(userChoice, computerChoice) {
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". AWW YOU LOSE :(");
     document.getElementById(userChoice).classList.add("user-lose");
-    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-lose");},500);
+    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-lose");},600);
 }
 
 function draw (userChoice) {
     /*console.log("IT'S A DRAW."); */
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
     document.getElementById(userChoice).classList.add("user-draw");
-    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-draw");},500);
+    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-draw");},600);
 }
 
 
