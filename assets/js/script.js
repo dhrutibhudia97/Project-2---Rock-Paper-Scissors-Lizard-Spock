@@ -4,6 +4,7 @@
 let button = document.getElementsByTagName("button");
 }) */
 
+const _animation_duration = 600;
 //computer random choice is generated
 function getComputerChoice() {
     const choice = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
@@ -63,7 +64,10 @@ function won(userChoice, computerChoice) {
     incrementUserScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");   
     document.getElementById(userChoice).classList.add("user-win");
-    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-win");},600);
+    
+    setTimeout(function () {document.getElementById(userChoice).classList.remove("user-win");
+      }, _animation_duration);
+
 }
 
 function lost(userChoice, computerChoice) {
@@ -71,15 +75,26 @@ function lost(userChoice, computerChoice) {
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". AWW YOU LOSE :(");
     document.getElementById(userChoice).classList.add("user-lose");
-    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-lose");},600);
+
+    setTimeout(function () {document.getElementById(userChoice).classList.remove("user-lose");
+      }, _animation_duration);
 }
 
 function draw (userChoice) {
     /*console.log("IT'S A DRAW."); */
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
     document.getElementById(userChoice).classList.add("user-draw");
-    setTimeout(function() {document.getElementById(userChoice).classList.remove("user-draw");},600);
+
+    animateUserSelection("user-draw");
+    setTimeout(function () {document.getElementById(userChoice).classList.remove("user-draw");
+    }, _animation_duration);
 }
+
+function animateUserSelection (animationClass) {
+    setTimeout(function () {
+      document.getElementById(userChoice).classList.remove(animationClass);
+    }, _animation_duration);
+  }
 
 
 function incrementUserScore () {
@@ -91,3 +106,9 @@ function incrementComputerScore () {
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldScore;
 }
+
+function animateUserSelection (animationClass) {
+    setTimeout(function () {
+      document.getElementById(userChoice).classList.remove(animationClass);
+    }, _animation_duration);
+  }
