@@ -89,20 +89,20 @@ body {
 }
 
 .user-win {
-    border: 5px solid #016e01;
+    border: 3px solid #016e01;
     color: #016e01; 
     transition: 0.2s;   
 }
 
 .user-lose {
-    border: 5px solid #c50505;
+    border: 3px solid #c50505;
     color: #c50505;
     transition: 0.2s; 
     
 }
 
 .user-draw {
-    border: 5px solid rgb(128, 0, 128);
+    border: 3px solid rgb(128, 0, 128);
     color: rgb(128, 0, 128);
     transition: 0.2s; 
 }

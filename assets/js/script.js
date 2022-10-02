@@ -1,8 +1,9 @@
 
 //Wait for the DOM to finish loading before running game.
-/*document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 let button = document.getElementsByTagName("button");
-}) */
+}) 
+main();
 
 const _animation_duration = 600;
 //computer random choice is generated
@@ -31,7 +32,6 @@ function getComputerChoice() {
     });
 }
 
-main();
 
 function game(userChoice) {
     const computerChoice = getComputerChoice(); 
