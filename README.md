@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock Game
 
-This game is for people who want to play the more complicated version of rock paper scissors from the well known tv series "The Big Bang Theory". This game has 2 extra options: lizard and spock which make the game slightly less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computers randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accesible and low effort on the users part.
+This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game slightly less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed.
 
 [screenshot inserted of game on different screen sizes]
 
@@ -13,38 +13,38 @@ At the top of the page, with a white background, easily visible with enough cont
  [screenshot of title]
 
 - __Buttons__
-Five button for each option (rock, paper, scissors, lizard and spock) for users to click, has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. Its visibly clear which button is which option, text underneath button to support this.
+Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
     - __Hover__ 
-    When cursor hovers over button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
+    When the cursor hovers over the button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
     - __Active__
-    When the button is clicked, the game outcome is shown, with the transition of 0.2 milliseconds, the border of button changes colour to signify result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the users choice. This makes it easier for user to play the game.
+    When the button is clicked, the game outcome is shown, with a transition of 0.2 milliseconds, and the border of the button changes colour to signify the result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the user's choice. This makes it easier for a user to play the game.
     - __Icons__
-    Icons from fontawesome used for each button.The icon being a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
+    Icons from font awesome were used for each button. The icon is a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
 -__Computer Generated Answer__
-This then is compared with the computers randomly generated choice (using Maths.random and Maths.floor functions). This can be easily added to as its set to "choice.length" if any additional options were to be added later on. 
+The user's choice is then compared with the computer randomly generated choice (using Maths.random and Maths.floor functions). This can be easily added to as it's set to "choice.length" if any additional options were to be added later on in the development of the game. 
 
 - __Generated Results__
-A switch case is used to determined the outcome of the game. The user and computer results combination to win, and draw and the default setting is to lose the game if the winning or draw combinations are matched.
+A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw and the default setting is to lose the game if the winning or draw combinations are matched.
 
 -__Results Text__
-Results will be displayed as text at the top of the screen, with the "userOption beat computerOption" if user win, "computerOption beats userOption" if computer wins, or "You both picked userOption" if its a draw.
+Results will be displayed as text at the top of the screen, with the "userOption beat computerOption" if the user wins, "computerOption beats userOption" if the computer wins, or "You both picked userOption" if it's a draw.
 
 -__User Prompt Text__ 
-Users see it when they first enter the page, positioned under the buttons. Short, easy to read sentence that allows users to know that to start the game, they need to click an icon.
+Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
 
 - __Increments user/computer score__
-At the bottom of the screen the results score, either gaining one to the user score if the user wins, gaining one to the computer score if the computer wins or no changes to the score made if it's a draw.
+At the bottom of the screen, the results score, either gaining one to the user score if the user wins, gaining one to the computer score if the computer wins or no changes to the score made if it's a draw.
 
 -__Buttons border change__
-Border of buttons change colour for 600 milliseconds depending on game result. Green for win, Red for lose and purple for draw. Made with constant "_animation_duration" so if in future, this were to be changed, only the constant needs to be changed and this will be applied to all game outcomes.
+The border of buttons changes colour for 600 milliseconds depending on the game result. Green for a win, Red for lose, and purple for a draw. Made with constant "_animation_duration" so if in future, this was to be changed, only the constant needs to be changed and this will be applied to all game outcomes.
 
 
 ## Testing
 
-- This game has been tested on the browsers; Google Chrome, Safari and Microsoft Edge and it works.
+- This game has been tested on the browsers; Google Chrome, Safari, and Microsoft Edge, and it works.
 
-- All of the features in this project work as intended on all differing screen sizes. The button icon colour change when the cursor hovers over the button. The buttons all work, the correct results messages are displayed at the top of the screen. The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
+- All of the features in this project work as intended on all differing screen sizes. The button icon colour change when the cursor hovers over the button. The buttons all work, and the correct results messages are displayed at the top of the screen. The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
 ### Validator Testing
 
@@ -78,26 +78,26 @@ Border of buttons change colour for 600 milliseconds depending on game result. G
 ### Fixed Bugs
 - In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
 
-- Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so results text always displays the correct users choice.
+- Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so the results text always displays the correct user choice.
 
 
 ### Unfixed bugs
-- Plagerism is currently 39.1% for javascript file when checked... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
+- Plagiarism is currently 39.1% for the javascript file when checked. Unsure how to decrease this significantly as some Id names e.g. rock, paper, etc. would match other games like this. Also, the switch case for calculating results has the same outcome names e.g. draw - rockrock.
 
-- Button hover style over-rides the button results outcome style, the icon will only change colour depending on outcome if mouse is not hovering over the icon,  because button:hover has a higher selector specificity than user-win/lose/draw style. Tried fixing with !important added to css styling but did not resolve the issue.
+- The button hover style overrides the button results outcome style, the icon will only change colour depending on the outcome if the mouse is not hovering over the icon because button: hover has a higher selector specificity than the user-win/lose/draw style. Tried fixing with !important added to CSS styling but did not resolve the issue.
 
-- On smaller screens, when buttons are clicked the icon is not centered. Tried to resolve by reducing border size, but icon still not centralised, but stays within the button border.
+- On smaller screens, when buttons are clicked the icon is not centered. Tried to resolve this by reducing border size, but the icon is still not centralised but stays within the button border.
 
-- Tried to reduce repeatable javascript code for click event of buttons, attempted to add event listeners to the class button rather then each Id, but this resulted in user choice not being recognised correctly.
+- Tried to reduce repeatable javascript code for the click event of buttons, and attempted to add event listeners to the class button rather than each Id, but this resulted in user choice not being recognised correctly.
 
-- When using inspect tool to check format of game on smaller screens the button-text is present, but when the game was tested on an actual mobile device the button-text was not present.
+- When using inspect tool to check the format of the game on smaller screens the button-text is present, but when the game was tested on an actual mobile device the button-text was not present.
 
 
 ### Deployment
 This site was successfully deployed on Github.
 The following steps were taken to deploy the site:
 
-- In Github, navigate to 'Settings' at the top of the screen.
+- In GitHub, navigate to 'Settings' at the top of the screen.
 - Then navigate to 'Pages' on the menu to the left of the screen.
 - From the Source section, select 'Deploy from a branch.'
 - For Branch, select 'Main' and '/(root)'.
@@ -128,13 +128,13 @@ This content refers to where I got my coding assistance and icons from.
     - Adding function to buttons by adding event listeners.
 
 - https://stackoverflow.com/questions/26002381/p-tag-in-button-tag-not-allowed
-    - To understand that the text element in a button needs to be in a span not a paragraph.
+    - To understand that the text element in a button needs to be in a span, not a paragraph.
 
 - https://www.w3schools.com/jsref/met_win_settimeout.asp
     - Assisted with making the border colour change temporary. 
 
 - Mentor meetings with Sandeep Aggarwal 
-    - Assisted with reducing size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
+    - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
 
 
 
@@ -150,5 +150,3 @@ This content refers to where I got my coding assistance and icons from.
 - JavaScript Validator - "https://jshint.com/"
 - Fontawesome - "https://fontawesome.com/"
 - CopyLeaks - [link]
-
-
