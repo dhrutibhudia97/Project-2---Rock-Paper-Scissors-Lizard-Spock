@@ -112,7 +112,7 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 This content refers to where I got my coding assistance and icons from.
 
 ### Content
-- Icons used for the buttons in the game were taken from font awesome - "https://fontawesome.com/".
+- Icons used for the buttons in the game were taken from font awesome. 
 
 - Rules for the game were taken from this site - https://www.instructables.com/How-to-Play-Rock-Paper-Scissors-Lizard-Spock/
 
@@ -145,10 +145,10 @@ This content refers to where I got my coding assistance and icons from.
 - HTML
 - CSS
 - JavaScript 
-- HTML Validator - [link]
-- CSS Validator - [link]
-- JavaScript Validator - [link]
-- Fontawesome - [link]
+- HTML Validator - "https://validator.w3.org/nu/#textarea"
+- CSS Validator - "https://jigsaw.w3.org/css-validator/"
+- JavaScript Validator - "https://jshint.com/"
+- Fontawesome - "https://fontawesome.com/"
 - CopyLeaks - [link]
 
 
