@@ -31,7 +31,7 @@ function getComputerChoice() {
     document.getElementById("Spock").addEventListener("click", function() {
         game("Spock"); 
     });
-}
+} 
 
 
 function game(userChoice) {
@@ -60,8 +60,8 @@ function game(userChoice) {
             lost(userChoice, computerChoice);
     } 
 }
+
 function won(userChoice, computerChoice) {
-    /*console.log("CONGRATS. YOU WIN!");*/
     incrementUserScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");   
     document.getElementById(userChoice).classList.add("user-win");
@@ -72,7 +72,6 @@ function won(userChoice, computerChoice) {
 }
 
 function lost(userChoice, computerChoice) {
-    /*console.log("AWWW. YOU LOSE! :(");*/
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". AWW YOU LOSE :(");
     document.getElementById(userChoice).classList.add("user-lose");
@@ -82,7 +81,7 @@ function lost(userChoice, computerChoice) {
 }
 
 function draw (userChoice) {
-    /*console.log("IT'S A DRAW."); */
+
     document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
     document.getElementById(userChoice).classList.add("user-draw");
 
@@ -112,4 +111,4 @@ function animateUserSelection (animationClass) {
     setTimeout(function () {
       document.getElementById(userChoice).classList.remove(animationClass);
     }, _animation_duration);
-  }
+}
