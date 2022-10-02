@@ -90,6 +90,8 @@ Border of buttons change colour for 600 milliseconds depending on game result. G
 
 - Tried to reduce repeatable javascript code for click event of buttons, attempted to add event listeners to the class button rather then each Id, but this resulted in user choice not being recognised correctly.
 
+- When using inspect tool to check format of game on smaller screens the button-text is present, but when the game was tested on an actual mobile device the button-text was not present.
+
 
 ### Deployment
 This site was successfully deployed on Github.
@@ -103,13 +105,40 @@ The following steps were taken to deploy the site:
 This live link to the website:
 https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
-// Consider including steps for creating a local copy of the repository, through cloning and forking methods, for future developers. (comments for project 1 feedback)
+// Consider including steps for creating a local copy of the repository, through cloning and forking methods, for future developers. (comments for project 1 feedback) //
 
 
 ## Credits
-
+This content refers to where I got my coding assistance and icons from.
 
 ### Content
+- Icons used for the buttons in the game were taken from font awesome - "https://fontawesome.com/".
+
+- Rules for the game were taken from this site - https://www.instructables.com/How-to-Play-Rock-Paper-Scissors-Lizard-Spock/
+
+### Coding Assistance/ Acknowledgements
+- The code institutes love maths module 
+    - Assisted with using JavaScript to increment user and computer scores. 
+    - The styling buttons for active/hover options. 
+    - CSS styling to help with media queries on smaller screens.
+
+- Youtube tutorial - "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org" 
+    - Assisted with JavaScript switch cases for result outcome.
+    - Use of random generator for computer choices. 
+    - Adding function to buttons by adding event listeners.
+
+- https://stackoverflow.com/questions/26002381/p-tag-in-button-tag-not-allowed
+    - To understand that the text element in a button needs to be in a span not a paragraph.
+
+- https://www.w3schools.com/jsref/met_win_settimeout.asp
+    - Assisted with making the border colour change temporary. 
+
+- Mentor meetings with Sandeep Aggarwal 
+    - Assisted with reducing size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
+
+
+
+
 
 
 ### Technologies
@@ -122,4 +151,4 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 - Fontawesome - [link]
 - CopyLeaks - [link]
 
-### Acknowledgements
+
