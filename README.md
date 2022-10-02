@@ -4,6 +4,7 @@ This game is for people who want to play the more complicated version of rock pa
 
 [screenshot inserted of game on different screen sizes]
 
+
 ## Features
 
 - __Title__
@@ -13,6 +14,10 @@ At the top of the page, with a white background, easily visible with enough cont
 
 - __Buttons__
 Five button for each option (rock, paper, scissors, lizard and spock) for users to click, has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. Its visibly clear which button is which option, text underneath button to support this.
+    - __Hover__ 
+    When cursor hovers over button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
+    - __Active__
+    When the button is clicked, the game outcome is shown, with the transition of 0.2 milliseconds, the border of button changes colour to signify result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the users choice. This makes it easier for user to play the game.
     - __Icons__
     Icons from fontawesome used for each button.The icon being a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
@@ -35,22 +40,20 @@ At the bottom of the screen the results score, either gaining one to the user sc
 Border of buttons change colour for 600 milliseconds depending on game result. Green for win, Red for lose and purple for draw. Made with constant "_animation_duration" so if in future, this were to be changed, only the constant needs to be changed and this will be applied to all game outcomes.
 
 
-
 ## Testing
 
 - This game has been tested on the browsers; Google Chrome, Safari and Microsoft Edge and it works.
 
-
-- Check all features work....
+- All of the features in this project work as intended on all differing screen sizes. The button icon colour change when the cursor hovers over the button. The buttons all work, the correct results messages are displayed at the top of the screen. The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
 ### Validator Testing
 
-| Code             | Validator                    | Results   
-| -------------    | -------------                | --------                            |
-| `HTML`           | W3C HTML validator           | `No errors were found.`             |
-| `CSS`            | Jigsaw CSS validator         | `No errors were found.`             |
-| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` |
-| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |
+| Code             | Validator                    | Results                             | 
+| -------------    | -------------                | --------                            |      
+| `HTML`           | W3C HTML validator           | `No errors were found.`             | 
+| `CSS`            | Jigsaw CSS validator         | `No errors were found.`             |      
+| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` |      
+| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |      
 
   - __Screenshots for each validator__
     - HTML Validator
@@ -71,10 +74,12 @@ Border of buttons change colour for 600 milliseconds depending on game result. G
 
     ![image](https://user-images.githubusercontent.com/107180641/192371205-2b264f17-fc1b-49ae-85f9-27465b62e3a4.png)
 
+
 ### Fixed Bugs
 - In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
 
 - Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so results text always displays the correct users choice.
+
 
 ### Unfixed bugs
 - Plagerism is currently 39.1% for javascript file when checked... unsure how to decrease this significantly as some ID names e.g. rock, paper etc. would match other games like this. Also the switch case for calculating results have exact same outcome names e.g. draw - rockrock.
@@ -95,9 +100,12 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 // Consider including steps for creating a local copy of the repository, through cloning and forking methods, for future developers. (comments for project 1 feedback)
 
+
 ## Credits
 
+
 ### Content
+
 
 ### Technologies
 - HTML

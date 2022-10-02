@@ -46,7 +46,7 @@ body {
 .button-text {
     font-size: 25px;
     text-transform: uppercase;
-    color: rgb(0, 0, 139);
+    color: rgb(0, 0, 139,0.6);
     text-align: center;
     display: block;
     margin-top: 21px;
@@ -57,8 +57,8 @@ body {
     transition: 0.3s;
 }
 
-.button:hover > p {
-    text-decoration: double;
+.button-text :hover {
+    color: rgb(0, 0, 139);
 } 
 
 .button :active {
@@ -120,7 +120,7 @@ body {
 
 /* Text Styling */
     #result-text, #user-prompt {
-        font-size: 1.1rem;
+        font-size: 16px;
 }
 
 /* Button Styling */
@@ -170,7 +170,7 @@ body {
 
 
     #result-text, #user-prompt {
-        font-size: 1.1rem;
+        font-size: 14px;
     }
 
     .button {

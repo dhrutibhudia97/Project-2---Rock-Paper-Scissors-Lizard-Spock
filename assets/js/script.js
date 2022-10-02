@@ -6,14 +6,15 @@ let button = document.getElementsByTagName("button");
 main();
 
 const _animation_duration = 600;
-//computer random choice is generated
+
+//Computer random choice is generated
 function getComputerChoice() {
     const choice = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     const randomChoice = [Math.floor(Math.random() * choice.length)];
     return choice[randomChoice];
 }
 
- //user clicking each option recognised by console.
+ //User clicking each option recognised by console.
  function main() {
     document.getElementById("Rock").addEventListener("click", function() {
         game("Rock"); 
