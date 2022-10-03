@@ -46,6 +46,7 @@ The border of buttons changes colour for 600 milliseconds depending on the game 
 
 - All of the features in this project work as intended on all differing screen sizes. The button icon colour change when the cursor hovers over the button. The buttons all work, and the correct results messages are displayed at the top of the screen. The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
+
 ### Validator Testing
 
 | Code             | Validator                    | Results                             | 
@@ -60,17 +61,13 @@ The border of buttons changes colour for 600 milliseconds depending on the game 
 
     ![html validator](https://user-images.githubusercontent.com/107180641/193662478-05b6b45e-7076-49bb-ad4a-67e065bb5ddd.png)
 
-
-
     - CSS Validator
 
     ![css validator](https://user-images.githubusercontent.com/107180641/193666697-a40b02fd-8752-4c59-9e3e-51001fd1a619.png)
 
-
     - JavaScript
 
     ![image](https://user-images.githubusercontent.com/107180641/192344822-5da4fdd6-2fec-4a74-9ca8-8ee118f52a0c.png)
-
 
     - Lighthouse Accessibility score
 
@@ -137,10 +134,6 @@ This content refers to where I got my coding assistance and icons from.
 
 - Mentor meetings with Sandeep Aggarwal 
     - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
-
-
-
-
 
 
 ### Technologies
