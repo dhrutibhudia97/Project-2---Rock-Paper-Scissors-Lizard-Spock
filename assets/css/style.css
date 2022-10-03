@@ -16,8 +16,9 @@ body {
 .heading {
     text-align: center;
     font-size: 3rem;
-    padding: 15px;
+    padding: 10px;
     color: rgb(128, 0, 128);
+    margin: 20px;
 }
 
 /* Text Styling */
@@ -74,7 +75,7 @@ body {
 
 .scores {
     display: inline-block;
-    padding: 15px;
+    padding: 8px;
     color: rgb(37, 37, 37);
 }
 
@@ -116,6 +117,7 @@ body {
     .heading {
         font-size:1.8rem;
         padding: 10px;
+        margin: 10px;
 }
 
 /* Text Styling */
@@ -166,6 +168,7 @@ body {
     .heading {
         font-size:1.4rem;
         padding: 10px;
+        margin:5px;
     }
 
 
