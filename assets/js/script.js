@@ -114,7 +114,7 @@ function animateUserSelection (animationClass) {
     }, _animation_duration);
   } 
 
-/**Functions to incremenet either user or computer score at the bottom of the page depending on win/loss outcome 
+/**Functions to increment either user or computer score at the bottom of the page depending on win/loss outcome 
  * Credit to code institutes love maths module.
 */
 function incrementUserScore () {
@@ -126,3 +126,6 @@ function incrementComputerScore () {
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldScore;
 }
+
+
+
