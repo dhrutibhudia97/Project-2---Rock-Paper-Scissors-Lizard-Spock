@@ -29,8 +29,6 @@ body {
     padding-top: 15px;
 }
 
-
-
 /* Button Styling */
 .button {
     font-size: 90px;
@@ -54,17 +52,17 @@ body {
 }
 
 .button :hover {
-    color: rgb(0, 0, 139); 
+    color: rgb(0, 0, 139);
     transition: 0.3s;
 }
 
 .button-text :hover {
     color: rgb(0, 0, 139);
-} 
+}
 
 .button :active {
-    color: #00008b;   
-} 
+    color: #00008b;
+}
 
 /* Score Area styling */
 .score-area {
@@ -80,7 +78,7 @@ body {
 }
 
 #user-score {
-    color: #016e01; 
+    color: #016e01;
     font-weight: bold;
 }
 
@@ -91,99 +89,94 @@ body {
 
 .user-win {
     border: 3px solid #016e01;
-    color: #016e01; 
-    transition: 0.2s;   
+    color: #016e01;
+    transition: 0.2s;
 }
 
 .user-lose {
     border: 3px solid #c50505;
     color: #c50505;
-    transition: 0.2s; 
-    
+    transition: 0.2s;
 }
 
 .user-draw {
     border: 3px solid rgb(128, 0, 128);
     color: rgb(128, 0, 128);
-    transition: 0.2s; 
-} 
-
+    transition: 0.2s;
+}
 
 /* Media queries for screens smaller than 507px */
-
 @media (max-width: 507px) {
-
-/* Heading */
+   /* Heading */
     .heading {
         font-size:1.8rem;
         padding: 10px;
         margin: 10px;
-}
+   }
 
-/* Text Styling */
+   /* Text Styling */
     #result-text, #user-prompt {
         font-size: 16px;
-}
+   }
 
-/* Button Styling */
-        .button {
+   /* Button Styling */
+    .button {
         font-size: 55px;
         margin: 15px 15px;
         width: 90px;
         height: 90px;
         padding: 15px;
-}
+   }
 
     .button-text {
         font-size: 18px;
         text-align: center;
         margin: 15px -15px;
-}
+   }
 
-/* Score area */
+   /* Score area */
     .score-area {
         margin: 18px auto 6px;
         font-size: 1.1rem;
-}
+   }
 
     .scores {
         padding: 7px;
         margin: 10px;
         display: block;
-    }
+   }
 
     .scores > p {
         margin: 10px;
-}
-
+   }
     #computer-score {
         margin-top: 5px;
-}
-
+   }
+   
 }
 
 /*Media queries for screens smaller than 390px */
-
 @media (max-width: 390px) {
     .heading {
         font-size:1.4rem;
         padding: 10px;
         margin:5px;
-    }
-
+   }
 
     #result-text, #user-prompt {
         font-size: 14px;
-    }
+   }
 
     .button {
         font-size: 40px;
         margin: 10px 10px 23px;
         width: 70px;
         height: 70px;
-        padding: 12px; 
-    }
+        padding: 12px;
+   }
+
     .button-text {
         font-size: 16px;
-    }
+   }
+
 }
