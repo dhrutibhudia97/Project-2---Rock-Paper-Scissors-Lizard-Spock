@@ -83,7 +83,7 @@ The border of buttons changes colour for 600 milliseconds depending on the game 
 ### Unfixed bugs
 - Plagiarism is currently 39.1% for the javascript file when checked. Unsure how to decrease this significantly as some Id names e.g. rock, paper, etc. would match other games like this. Also, the switch case for calculating results has the same outcome names e.g. draw - rockrock.
 
-- The button hover style overrides the button results outcome style, the icon will only change colour depending on the outcome if the mouse is not hovering over the icon because button: hover has a higher selector specificity than the user-win/lose/draw style. Tried fixing with !important added to CSS styling but did not resolve the issue.
+- The button hover style overrides the button result outcome style, the icon will only change colour depending on the outcome if the mouse is not hovering over the icon because button: hover has a higher selector specificity than the user-win/lose/draw style. Tried fixing with !important added to CSS styling but did not resolve the issue.
 
 - On smaller screens, when buttons are clicked the icon is not centered. Tried to resolve this by reducing border size, but the icon is still not centralised but stays within the button border.
 
