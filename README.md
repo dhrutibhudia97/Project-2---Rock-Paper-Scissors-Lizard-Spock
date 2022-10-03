@@ -64,7 +64,8 @@ The border of buttons changes colour for 600 milliseconds depending on the game 
 
     - CSS Validator
 
-    ![image](https://user-images.githubusercontent.com/107180641/192340268-3689a733-60b7-4d39-a61d-364b6e8da19a.png)
+    ![css validator](https://user-images.githubusercontent.com/107180641/193666697-a40b02fd-8752-4c59-9e3e-51001fd1a619.png)
+
 
     - JavaScript
 
