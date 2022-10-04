@@ -91,7 +91,7 @@ The border of buttons changes colour temporarily depending on the game result. G
 
 
 ### Fixed Bugs
-- In the result-text the userChoice and computerChoice were "undefined", but this was resolved after adding the userChoice and computerChoice to the parameters of the won/lost/draw functions in the switch case.
+- In the result-text the users choice and the computers choice were "undefined", but this was resolved after adding the users/computers choice to the parameters of the won/lost/draw functions in the switch case.
 
 - Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so the results text always displays the correct user choice.
 
