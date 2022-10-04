@@ -112,10 +112,10 @@ function draw(userChoice) {
 /**Animates the choice selected by user based on whether they won/lost/draw.
  * @param animationClass
  */
-function animateUserSelection(animationClass) {
+function animateUserSelection(userChoice, animationClass) {
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove(animationClass);
-    }, _ANIMATION_DURATION);
+    }, _ANIMATION_DURATION); 
 }
 
 /**Functions to increment either user or computer score at the bottom of the page depending on win/lost outcome. 
