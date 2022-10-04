@@ -59,12 +59,12 @@ The border of buttons changes colour for 600 milliseconds depending on the game 
 
 ### Validator Testing
 
-| Code             | Validator                    | Results                             | 
-| -------------    | -------------                | --------                            |      
-| `HTML`           | W3C HTML validator           | `No errors were found.`             | 
-| `CSS`            | Jigsaw CSS validator         | `No errors were found.`             |      
-| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` |      
-| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |      
+| Code             | Validator                    | Results                             | Validator Link     |
+| -------------    | -------------                | --------                            |------------------  |     
+| `HTML`           | W3C HTML validator           | `No errors were found.`             |                    |
+| `CSS`            | Jigsaw CSS validator         | `No errors were found.`             |                    |    
+| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` |                    |   
+| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |                    |  
 
   - __Screenshots for each validator__
     - HTML Validator
