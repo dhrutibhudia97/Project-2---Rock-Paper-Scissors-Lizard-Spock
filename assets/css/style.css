@@ -1,6 +1,6 @@
 /* General Body Styling */
 body {
-    background-color: #ffffff;
+    background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #074279;
     text-align: center;
@@ -22,10 +22,11 @@ body {
 }
 
 /* Text Styling */
-#result-text, #user-prompt {
+#result-text,
+#user-prompt {
     font-size: 1.6rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
+    color: #000;
     padding-top: 15px;
 }
 
@@ -37,7 +38,7 @@ body {
     padding: 18px;
     width: 140px;
     height: 140px;
-    background-color: #ffffff;
+    background-color: #fff;
     color:rgb(0, 0, 139,0.6);
     cursor: pointer;
 }
@@ -115,7 +116,8 @@ body {
    }
 
    /* Text Styling */
-    #result-text, #user-prompt {
+    #result-text, 
+    #user-prompt {
         font-size: 16px;
    }
 
@@ -163,7 +165,8 @@ body {
         margin:5px;
    }
 
-    #result-text, #user-prompt {
+    #result-text, 
+    #user-prompt {
         font-size: 14px;
    }
 
