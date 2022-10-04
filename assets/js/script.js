@@ -1,19 +1,23 @@
-//Wait for the DOM to finish loading before running game.
+/**
+ * Wait for the DOM to finish loading before running game.
+ * Code from https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
+ */
 document.addEventListener('DOMContentLoaded', (_event) => {
     console.log('DOM fully loaded');
   });
 main();
 
-// Constant set for animation duration of the border colour change.
-const _animation_duration = 600;
+// Animation duration of the border colour change.
+const _ANIMATION_DURATION = 600;
+
+const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 /**Computer random choice is generated 
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
  */
 function getComputerChoice() {
-    const choice = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
-    const randomChoice = [Math.floor(Math.random() * choice.length)];
-    return choice[randomChoice];
+    const randomChoice = [Math.floor(Math.random() * CHOICES.length)];
+    return CHOICES[randomChoice];
 }
 
 /**User clicking each button recognised by game.
@@ -82,7 +86,7 @@ function won(userChoice, computerChoice) {
 
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-win");
-    }, _animation_duration);
+    }, _ANIMATION_DURATION);
 }
 
 function lost(userChoice, computerChoice) {
@@ -92,7 +96,7 @@ function lost(userChoice, computerChoice) {
 
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-lose");
-    }, _animation_duration);
+    }, _ANIMATION_DURATION);
 }
 
 function draw(userChoice) {
@@ -102,7 +106,7 @@ function draw(userChoice) {
     animateUserSelection("user-draw");
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-draw");
-    }, _animation_duration);
+    }, _ANIMATION_DURATION);
 }
 
 /**Animates the choice selected by user based on whether they won/lost/draw.
@@ -111,7 +115,7 @@ function draw(userChoice) {
 function animateUserSelection(animationClass) {
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove(animationClass);
-    }, _animation_duration);
+    }, _ANIMATION_DURATION);
 }
 
 /**Functions to increment either user or computer score at the bottom of the page depending on win/lost outcome. 

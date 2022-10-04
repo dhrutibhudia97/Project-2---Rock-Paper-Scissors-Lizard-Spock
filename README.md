@@ -135,6 +135,9 @@ This content refers to where I got my coding assistance and icons from.
 - Mentor meetings with Sandeep Aggarwal 
     - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
 
+- https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
+    - Assisted with DOMContentLoaded code at the top of the javascript file.
+
 
 ### Technologies
 - HTML
