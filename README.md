@@ -40,6 +40,16 @@ At the bottom of the screen, the results score, either gaining one to the user s
 The border of buttons changes colour for 600 milliseconds depending on the game result. Green for a win, Red for lose, and purple for a draw. Made with constant "_animation_duration" so if in future, this was to be changed, only the constant needs to be changed and this will be applied to all game outcomes.
 
 
+### Technologies
+- HTML
+- CSS
+- JavaScript 
+- HTML Validator - "https://validator.w3.org/nu/#textarea"
+- CSS Validator - "https://jigsaw.w3.org/css-validator/"
+- JavaScript Validator - "https://jshint.com/"
+- Fontawesome - "https://fontawesome.com/"
+
+
 ## Testing
 
 - This game has been tested on the browsers; Google Chrome, Safari, and Microsoft Edge, and it works.
@@ -101,15 +111,14 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 
 ## Credits
-This content refers to where I got my coding assistance and icons from.
 
 ### Content
-- Icons used for the buttons in the game were taken from font awesome. 
+- Icons used for the buttons in the game were taken from font awesome. - https://fontawesome.com/
 
 - Rules for the game were taken from this site - https://www.instructables.com/How-to-Play-Rock-Paper-Scissors-Lizard-Spock/
 
 ### Coding Assistance/ Acknowledgements
-- The code institutes love maths module 
+- The Code Institutes Love Maths module 
     - Assisted with using JavaScript to increment user and computer scores. 
     - The styling buttons for active/hover options. 
     - CSS styling to help with media queries on smaller screens.
@@ -118,13 +127,8 @@ This content refers to where I got my coding assistance and icons from.
     - Assisted with JavaScript switch cases for result outcome.
     - Use of random generator for computer choices. 
     - Adding function to buttons by adding event listeners.
-
-- https://stackoverflow.com/questions/26002381/p-tag-in-button-tag-not-allowed
-    - To understand that the text element in a button needs to be in a span, not a paragraph.
-
-- https://www.w3schools.com/jsref/met_win_settimeout.asp
     - Assisted with making the border colour change temporary. 
-
+    
 - Mentor meetings with Sandeep Aggarwal 
     - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
 
@@ -132,12 +136,3 @@ This content refers to where I got my coding assistance and icons from.
     - Assisted with DOMContentLoaded code at the top of the javascript file.
 
 
-### Technologies
-- HTML
-- CSS
-- JavaScript 
-- HTML Validator - "https://validator.w3.org/nu/#textarea"
-- CSS Validator - "https://jigsaw.w3.org/css-validator/"
-- JavaScript Validator - "https://jshint.com/"
-- Fontawesome - "https://fontawesome.com/"
-- CopyLeaks - [link]
