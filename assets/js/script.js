@@ -1,3 +1,7 @@
+//Wait for the DOM to finish loading before running game.
+document.addEventListener('DOMContentLoaded', (_event) => {
+    console.log('DOM fully loaded');
+  });
 main();
 
 // Constant set for animation duration of the border colour change.
