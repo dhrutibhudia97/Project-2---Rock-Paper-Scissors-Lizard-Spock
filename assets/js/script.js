@@ -39,7 +39,7 @@ function main() {
     document.getElementById("Spock").addEventListener("click", function() {
         game("Spock");
     });
-}
+} 
 
 /** 
  * Determines the game output.
@@ -74,7 +74,7 @@ function game(userChoice) {
 }
 
 /**
- * Function won,lost and draw defined above, displays results-text message at the top of the screen.
+ * Won outcome determined, displays results-text message at the top of the screen.
  * Function "won" adds one to the user score, "lost" adds one to the computer score.
  * @param setTimeout used to set border colour change to 600 milliseconds depending on game outcome.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.

@@ -94,10 +94,18 @@ body {
     transition: 0.2s;
 }
 
+.user-win :hover {
+    color: #016e01;
+}
+
 .user-lose {
     border: 3px solid #c50505;
     color: #c50505;
     transition: 0.2s;
+}
+
+.user-lose :hover {
+    color: #c50505;
 }
 
 .user-draw {
@@ -105,6 +113,11 @@ body {
     color: rgb(128, 0, 128);
     transition: 0.2s;
 }
+
+.user-draw :hover {
+    color: rgb(128, 0, 128);
+}
+
 
 /* Media queries for screens smaller than 507px */
 @media (max-width: 507px) {
