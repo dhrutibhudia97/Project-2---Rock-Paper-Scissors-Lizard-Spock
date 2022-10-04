@@ -14,21 +14,24 @@ At the top of the page, with a white background, easily visible with enough cont
 
 - __Buttons__
 Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
+[screenshot of Button]
     - __Hover__ 
     When the cursor hovers over the button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
+[screenshot of Button :hover]
     - __Active__
     When the button is clicked, the game outcome is shown, with a transition of 0.2 milliseconds, and the border of the button changes colour to signify the result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the user's choice. This makes it easier for a user to play the game.
+[screenshot of Button :active]
     - __Icons__
     Icons from font awesome were used for each button. The icon is a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
 -__Computer Generated Answer__
-The user's choice is then compared with the computer randomly generated choice (using Maths.random and Maths.floor functions). This can be easily added to as it's set to "choice.length" if any additional options were to be added later on in the development of the game. 
+The user's choice is then compared with the computers randomly generated choice. 
 
 - __Generated Results__
-A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw and the default setting is to lose the game if the winning or draw combinations are matched.
+A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw and the default setting is to lose the game if the winning or draw combinations aren't matched.
 
 -__Results Text__
-Results will be displayed as text at the top of the screen, with the "userOption beat computerOption" if the user wins, "computerOption beats userOption" if the computer wins, or "You both picked userOption" if it's a draw.
+Results will be displayed as text at the top of the screen. Displays the users choice and computers choice and whether the win/lose or draw.
 
 -__User Prompt Text__ 
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
@@ -37,7 +40,7 @@ Users see it when they first enter the page, positioned under the buttons. The s
 At the bottom of the screen, the results score, either gaining one to the user score if the user wins, gaining one to the computer score if the computer wins or no changes to the score made if it's a draw.
 
 -__Buttons border change__
-The border of buttons changes colour for 600 milliseconds depending on the game result. Green for a win, Red for lose, and purple for a draw. Made with constant "_animation_duration" so if in future, this was to be changed, only the constant needs to be changed and this will be applied to all game outcomes.
+The border of buttons changes colour temporarily depending on the game result. Green for a win, Red for lose, and purple for a draw. 
 
 
 ### Technologies
@@ -54,7 +57,10 @@ The border of buttons changes colour for 600 milliseconds depending on the game 
 
 - This game has been tested on the browsers; Google Chrome, Safari, and Microsoft Edge, and it works.
 
-- All of the features in this project work as intended on all differing screen sizes. The button icon colour change when the cursor hovers over the button. The buttons all work, and the correct results messages are displayed at the top of the screen. The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
+- All of the features in this project work as intended on all differing screen sizes. 
+- The button icon colour change when the cursor hovers over the button. 
+- The buttons all work, and the correct results messages are displayed at the top of the screen. 
+- The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
 
 ### Validator Testing
@@ -111,7 +117,6 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 
 ## Credits
-
 ### Content
 - Icons used for the buttons in the game were taken from font awesome. - https://fontawesome.com/
 
@@ -134,5 +139,3 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
     - Assisted with DOMContentLoaded code at the top of the javascript file.
-
-
