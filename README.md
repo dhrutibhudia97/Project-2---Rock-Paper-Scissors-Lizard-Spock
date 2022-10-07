@@ -71,7 +71,7 @@ The border of buttons changes colour temporarily depending on the game result. G
 | -------------    | -------------                | --------                            |------------------  |     
 | `HTML`           | W3C HTML validator           | `No errors were found`       |   https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
-| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` |                    |   
+| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` | https://jshint.com/                   |   
 | `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |                    |  
 
   - __Screenshots for each validator__
@@ -87,11 +87,12 @@ The border of buttons changes colour temporarily depending on the game result. G
 
     - JavaScript
 
-    ![image](https://user-images.githubusercontent.com/107180641/192344822-5da4fdd6-2fec-4a74-9ca8-8ee118f52a0c.png)
+    ![javascript validator](https://user-images.githubusercontent.com/107180641/194573481-c4cddcde-ffd9-4097-a664-1d042a1af397.png)
+
 
     - Lighthouse Accessibility score
 
-    ![image](https://user-images.githubusercontent.com/107180641/192371205-2b264f17-fc1b-49ae-85f9-27465b62e3a4.png)
+    ![light house score](https://user-images.githubusercontent.com/107180641/194574413-bc7d29de-9324-4c97-abf9-5fd6c8667f10.png)
 
 
 ### Fixed Bugs
