@@ -2,7 +2,8 @@
 
 This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed.
 
-[screenshot inserted of game on different screen sizes]
+![responsive design](https://user-images.githubusercontent.com/107180641/194586915-e19ce3bd-b7ac-4284-952b-5f8e8fb051ff.png)
+
 
 
 ## Features
@@ -43,20 +44,20 @@ A switch case is used to determine the outcome of the game. The user and compute
 - __Results Text__
 Results will be displayed as text at the top of the screen. Displays the user's choice and computer's choice and whether they win/lose or draw.
 
-![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
-![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
-![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
+    ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
+    ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
+    ![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
 
 
 - __User Prompt Text__ 
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
 
-![user prompt](https://user-images.githubusercontent.com/107180641/194579645-edc9e3e1-16c6-4ca3-9b27-f20a29479bc1.png)
+    ![user prompt](https://user-images.githubusercontent.com/107180641/194579645-edc9e3e1-16c6-4ca3-9b27-f20a29479bc1.png)
 
 - __Increments user/computer score__
 At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw.
 
-![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
+    ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
 
  
 
