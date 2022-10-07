@@ -69,8 +69,8 @@ The border of buttons changes colour temporarily depending on the game result. G
 
 | Code             | Validator                    | Results                             | Validator Link     |
 | -------------    | -------------                | --------                            |------------------  |     
-| `HTML`           | W3C HTML validator           | `No errors were found.`             |                    |
-| `CSS`            | Jigsaw CSS validator         | `No errors were found.`             |                    |    
+| `HTML`           | W3C HTML validator           | `No errors were found`       |   https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
+| `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
 | `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` |                    |   
 | `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |                    |  
 
@@ -82,7 +82,8 @@ The border of buttons changes colour temporarily depending on the game result. G
 
     - CSS Validator
 
-    ![css validator](https://user-images.githubusercontent.com/107180641/193666697-a40b02fd-8752-4c59-9e3e-51001fd1a619.png)
+    ![css validator](https://user-images.githubusercontent.com/107180641/194572138-39a81199-2376-4db5-a70d-45d049b82e8d.png)
+
 
     - JavaScript
 
