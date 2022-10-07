@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock Game
 
-This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game slightly less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed.
+This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed.
 
 [screenshot inserted of game on different screen sizes]
 
@@ -14,7 +14,9 @@ At the top of the page, with a white background, easily visible with enough cont
 
 - __Buttons__
 Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
+
 [screenshot of Button]
+
     - __Hover__ 
     When the cursor hovers over the button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
 [screenshot of Button :hover]
@@ -25,19 +27,19 @@ Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for user
     Icons from font awesome were used for each button. The icon is a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
 -__Computer Generated Answer__
-The user's choice is then compared with the computers randomly generated choice. 
+The user's choice is then compared with the computer's randomly generated choice out of the 5 options available.
 
 - __Generated Results__
-A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw and the default setting is to lose the game if the winning or draw combinations aren't matched.
+A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw are stated in the switch case and the default setting is to lose the game if the winning or draw combinations aren't matched.
 
 -__Results Text__
-Results will be displayed as text at the top of the screen. Displays the users choice and computers choice and whether the win/lose or draw.
+Results will be displayed as text at the top of the screen. Displays the user's choice and computer's choice and whether they win/lose or draw.
 
 -__User Prompt Text__ 
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
 
 - __Increments user/computer score__
-At the bottom of the screen, the results score, either gaining one to the user score if the user wins, gaining one to the computer score if the computer wins or no changes to the score made if it's a draw.
+At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw.
 
 -__Buttons border change__
 The border of buttons changes colour temporarily depending on the game result. Green for a win, Red for lose, and purple for a draw. 
@@ -55,7 +57,7 @@ The border of buttons changes colour temporarily depending on the game result. G
 
 ## Testing
 
-- This game has been tested on the browsers; Google Chrome, Safari, and Microsoft Edge, and it works.
+- This game has been tested and works on the browsers; Google Chrome, Safari, and Microsoft Edge.
 
 - All of the features in this project work as intended on all differing screen sizes. 
 - The button icon colour change when the cursor hovers over the button. 
@@ -74,8 +76,9 @@ The border of buttons changes colour temporarily depending on the game result. G
 
   - __Screenshots for each validator__
     - HTML Validator
+    
+    ![html validator](https://user-images.githubusercontent.com/107180641/194571516-6577692a-a36c-4150-bf24-15a999e44ae6.png)
 
-    ![html validator](https://user-images.githubusercontent.com/107180641/193662478-05b6b45e-7076-49bb-ad4a-67e065bb5ddd.png)
 
     - CSS Validator
 
@@ -91,14 +94,14 @@ The border of buttons changes colour temporarily depending on the game result. G
 
 
 ### Fixed Bugs
-- In the result-text the users choice and the computers choice were "undefined", but this was resolved after adding the users/computers choice to the parameters of the won/lost/draw functions in the switch case.
+- In the result text the user's choice and the computer's choice were "undefined", but this was resolved after adding the user's/computer's choice to the parameters of the won/lost/draw functions in the switch case.
 
 - Clicking buttons sometimes displays user choice incorrectly, but changing the order of the parameters in the won/lost/draw functions fixed this so the results text always displays the correct user choice.
 
-- The icon would only change colour depending on the outcome if the mouse is not hovering over the icon. But this was resolved when another class was added for user-win/lose/draw : hover, which then overrided the button : hover style.
+- The icon would only change colour depending on the outcome if the mouse is not hovering over the icon. But this was resolved when another class was added for user-win/lose/draw : hover, which then overrode the button : hover style.
 
 ### Unfixed bugs
-- When using inspect tool to check the format of the game on smaller screens the button-text is present, but when the game was tested on an actual mobile device the button-text was not present.
+- When using inspect tool to check the format of the game on smaller screens the button text is present, but when the game was tested on an actual mobile device the button text was not present.
 
 
 ### Deployment
@@ -113,7 +116,7 @@ The following steps were taken to deploy the site:
 This live link to the website:
 https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
-// Consider including steps for creating a local copy of the repository, through cloning and forking methods, for future developers. (comments for project 1 feedback) //
+// CONSIDER including steps for creating a local copy of the repository, through cloning and forking methods, for future developers. (comments for project 1 feedback) //
 
 
 ## Credits
@@ -135,7 +138,8 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
     - Assisted with making the border colour change temporary. 
     
 - Mentor meetings with Sandeep Aggarwal 
-    - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result. 
+    - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result.
+    - Adding the animation duration function. 
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
     - Assisted with DOMContentLoaded code at the top of the javascript file.

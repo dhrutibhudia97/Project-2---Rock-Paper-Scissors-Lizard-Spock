@@ -1,5 +1,5 @@
 /**
- * Wait for the DOM to finish loading before running game.
+ * Wait for the DOM to finish loading before running the game.
  * Code from https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
  */
 document.addEventListener('DOMContentLoaded', (_event) => {
@@ -24,7 +24,7 @@ function getComputerChoice() {
 }
 
 /**
- * User clicking each button recognised by game.
+ * User clicking each button recognised by the game.
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
  * Time of video - 34:35.
  */
@@ -80,9 +80,9 @@ function game(userChoice) {
 }
 
 /**
- * Won outcome determined, displays results-text message at the top of the screen.
+ * Won outcome determined, displays result-text message at the top of the screen.
  * Increments user score by one.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 56:00.
  */
 function won(userChoice, computerChoice) {
@@ -91,14 +91,13 @@ function won(userChoice, computerChoice) {
     
 /**
  * Add style to user-win result.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:16:21.
  */
     document.getElementById(userChoice).classList.add("user-win");
-
 /** 
 * Green border change animation lasts for 600 milliseconds.
-* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
 * Time of video - 1:20:30.
 */
     setTimeout(function() {
@@ -107,24 +106,24 @@ function won(userChoice, computerChoice) {
 }
 
 /**
- * Lost outcome determined, displays results-text message at the top of the screen.
+ * Lost outcome determined, displays result-text message at the top of the screen.
  * Increments computer score by one.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:08:30.
  */
 function lost(userChoice, computerChoice) {
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW YOU LOSE :(`;
-/**
+
+    /**
  * Add style to user-lose result.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:26.
  */
     document.getElementById(userChoice).classList.add("user-lose");
-
 /** 
 * Red border change animation lasts for 600 milliseconds.
-* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
 * Time of video - 1:23:25
 */
     setTimeout(function() {
@@ -133,22 +132,22 @@ function lost(userChoice, computerChoice) {
 } 
 
 /**
- * Draw outcome determined, displays results-text message at the top of the screen.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Draw outcome determined, displays result-text message at the top of the screen.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:10:30.
  */
 function draw(userChoice) {
     document.getElementById("result-text").innerHTML = `You both picked ${userChoice}. IT'S A DRAW!`;
-/**
+
+    /**
  * Add style to user-draw result.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:45.
  */
     document.getElementById(userChoice).classList.add("user-draw");
-
 /** 
 * Purple border change animation lasts for 600 milliseconds.
-* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
 * Time of video - 1:23:45.
 */
     animateUserSelection("user-draw");
@@ -158,7 +157,7 @@ function draw(userChoice) {
 }
 
 /**
- * Animates the choice selected by user based on whether they won/lost/draw.
+ * Animates the choice selected by the user based on whether they won/lost/draw.
  * @param animationClass
  * _ANIMATION_DURATION constant set to 600 milliseconds, at the top of the javascript file.
  */
@@ -170,7 +169,7 @@ function animateUserSelection(userChoice, animationClass) {
 
 /**
  * Increments the user score by 1 at the bottom of the page if the user wins. 
- * Credit to Code Institutes Love Maths module.
+ * Credit to Code Institutes 'Love Maths' module.
  */
 function incrementUserScore() {
     let oldScore = parseInt(document.getElementById("user-score").innerText);
@@ -179,7 +178,7 @@ function incrementUserScore() {
 
 /**
  * Increments the computer score by 1 at the bottom of the page if the computer wins. 
- * Credit to Code Institutes Love Maths module.
+ * Credit to Code Institutes 'Love Maths' module.
  */
 function incrementComputerScore() {
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
