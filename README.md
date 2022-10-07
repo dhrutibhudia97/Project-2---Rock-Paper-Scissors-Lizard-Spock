@@ -43,7 +43,10 @@ A switch case is used to determine the outcome of the game. The user and compute
 - __Results Text__
 Results will be displayed as text at the top of the screen. Displays the user's choice and computer's choice and whether they win/lose or draw.
 
+![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
 ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
+![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
+
 
 - __User Prompt Text__ 
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
