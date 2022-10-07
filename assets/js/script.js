@@ -83,8 +83,9 @@ function game(userChoice) {
  */
 function won(userChoice, computerChoice) {
     incrementUserScore();
-    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". CONGRATS YOU WIN :D");
+    document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D`;
     document.getElementById(userChoice).classList.add("user-win");
+
 /** 
 * Green border change animation lasts for 600 milliseconds.
 * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
@@ -101,8 +102,9 @@ function won(userChoice, computerChoice) {
  */
 function lost(userChoice, computerChoice) {
     incrementComputerScore();
-    document.getElementById("result-text").innerHTML = ("You picked " + userChoice + " & the Computer picked " + computerChoice + ". AWW YOU LOSE :(");
+    document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW YOU LOSE :(`;
     document.getElementById(userChoice).classList.add("user-lose");
+
 /** 
 * Red border change animation lasts for 600 milliseconds.
 * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
@@ -117,8 +119,9 @@ function lost(userChoice, computerChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
  */
 function draw(userChoice) {
-    document.getElementById("result-text").innerHTML = ("You both picked " + userChoice + ". IT'S A DRAW.");
+    document.getElementById("result-text").innerHTML = `You both picked ${userChoice}. IT'S A DRAW!`;
     document.getElementById(userChoice).classList.add("user-draw");
+
 /** 
 * Purple border change animation lasts for 600 milliseconds.
 * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
