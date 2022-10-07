@@ -21,33 +21,41 @@ Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for user
     - __Hover__ 
     When the cursor hovers over the button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
 
-    ![button hover](https://user-images.githubusercontent.com/107180641/194578255-974ca262-04fd-48d0-86ff-56b439b3b49e.png)
+        ![button hover](https://user-images.githubusercontent.com/107180641/194578255-974ca262-04fd-48d0-86ff-56b439b3b49e.png)
 
     - __Active__
     When the button is clicked, the game outcome is shown, with a transition of 0.2 milliseconds, and the border of the button changes colour to signify the result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the user's choice. This makes it easier for a user to play the game.
 
-    ![button active](https://user-images.githubusercontent.com/107180641/194578574-457c5c03-c31f-4f20-9091-e46eab07461f.png)
+        ![button active](https://user-images.githubusercontent.com/107180641/194578574-457c5c03-c31f-4f20-9091-e46eab07461f.png)
 
     - __Icons__
     Icons from font awesome were used for each button. The icon is a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
--__Computer Generated Answer__
+    - __Buttons border change__
+    The border of buttons changes colour temporarily depending on the game result. Green for a win, Red for lose, and purple for a draw.
+
+- __Computer Generated Answer__
 The user's choice is then compared with the computer's randomly generated choice out of the 5 options available.
 
 - __Generated Results__
 A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw are stated in the switch case and the default setting is to lose the game if the winning or draw combinations aren't matched.
 
--__Results Text__
+- __Results Text__
 Results will be displayed as text at the top of the screen. Displays the user's choice and computer's choice and whether they win/lose or draw.
 
--__User Prompt Text__ 
+![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
+
+- __User Prompt Text__ 
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
+
+![user prompt](https://user-images.githubusercontent.com/107180641/194579645-edc9e3e1-16c6-4ca3-9b27-f20a29479bc1.png)
 
 - __Increments user/computer score__
 At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw.
 
--__Buttons border change__
-The border of buttons changes colour temporarily depending on the game result. Green for a win, Red for lose, and purple for a draw. 
+![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
+
+ 
 
 
 ### Technologies
