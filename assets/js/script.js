@@ -15,7 +15,8 @@ const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 /**
  * Computer random choice is generated. 
- * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
+ * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0". 
+ * Time of video - 39:10.
  */
 function getComputerChoice() {
     const randomChoice = [Math.floor(Math.random() * CHOICES.length)];
@@ -25,6 +26,7 @@ function getComputerChoice() {
 /**
  * User clicking each button recognised by game.
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
+ * Time of video - 34:35.
  */
 function main() {
     document.getElementById("Rock").addEventListener("click", function() {
@@ -48,6 +50,7 @@ function main() {
  * Determines the game output.
  * Switch case used to match the user and computer choice combination and match it to a win, lose or draw result.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org"
+ * Time of video - 48.12.
  */
 function game(userChoice) {
     const computerChoice = getComputerChoice();
@@ -80,15 +83,23 @@ function game(userChoice) {
  * Won outcome determined, displays results-text message at the top of the screen.
  * Increments user score by one.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Time of video - 56:00.
  */
 function won(userChoice, computerChoice) {
     incrementUserScore();
     document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D`;
+    
+/**
+ * Add style to user-win result.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Time of video - 1:16:21.
+ */
     document.getElementById(userChoice).classList.add("user-win");
 
 /** 
 * Green border change animation lasts for 600 milliseconds.
 * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+* Time of video - 1:20:30.
 */
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-win");
@@ -99,15 +110,22 @@ function won(userChoice, computerChoice) {
  * Lost outcome determined, displays results-text message at the top of the screen.
  * Increments computer score by one.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Time of video - 1:08:30.
  */
 function lost(userChoice, computerChoice) {
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW YOU LOSE :(`;
+/**
+ * Add style to user-lose result.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Time of video - 1:23:26.
+ */
     document.getElementById(userChoice).classList.add("user-lose");
 
 /** 
 * Red border change animation lasts for 600 milliseconds.
 * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+* Time of video - 1:23:25
 */
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-lose");
@@ -117,14 +135,21 @@ function lost(userChoice, computerChoice) {
 /**
  * Draw outcome determined, displays results-text message at the top of the screen.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Time of video - 1:10:30.
  */
 function draw(userChoice) {
     document.getElementById("result-text").innerHTML = `You both picked ${userChoice}. IT'S A DRAW!`;
+/**
+ * Add style to user-draw result.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+ * Time of video - 1:23:45.
+ */
     document.getElementById(userChoice).classList.add("user-draw");
 
 /** 
 * Purple border change animation lasts for 600 milliseconds.
 * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes love maths module.
+* Time of video - 1:23:45.
 */
     animateUserSelection("user-draw");
     setTimeout(function() {
