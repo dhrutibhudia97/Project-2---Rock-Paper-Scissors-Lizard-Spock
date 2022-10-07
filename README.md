@@ -10,19 +10,24 @@ This game is for people who want to play the more complicated version of rock pa
 - __Title__
 At the top of the page, with a white background, easily visible with enough contrast. Changes size with screen size.
 
- [screenshot of title]
+    ![title](https://user-images.githubusercontent.com/107180641/194577471-0da71221-8da3-4f45-b2ae-f93778b292ad.png)
+
 
 - __Buttons__
 Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
 
-[screenshot of Button]
+    ![buttons](https://user-images.githubusercontent.com/107180641/194577844-fee2e61f-39f7-44cb-858e-5d24625ca680.png)
 
     - __Hover__ 
     When the cursor hovers over the button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
-[screenshot of Button :hover]
+
+    ![button hover](https://user-images.githubusercontent.com/107180641/194578255-974ca262-04fd-48d0-86ff-56b439b3b49e.png)
+
     - __Active__
     When the button is clicked, the game outcome is shown, with a transition of 0.2 milliseconds, and the border of the button changes colour to signify the result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the user's choice. This makes it easier for a user to play the game.
-[screenshot of Button :active]
+
+    ![button active](https://user-images.githubusercontent.com/107180641/194578574-457c5c03-c31f-4f20-9091-e46eab07461f.png)
+
     - __Icons__
     Icons from font awesome were used for each button. The icon is a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
