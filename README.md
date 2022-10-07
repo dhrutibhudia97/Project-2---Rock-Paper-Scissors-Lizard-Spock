@@ -5,14 +5,12 @@ This game is for people who want to play the more complicated version of rock pa
 ![responsive design](https://user-images.githubusercontent.com/107180641/194586915-e19ce3bd-b7ac-4284-952b-5f8e8fb051ff.png)
 
 
-
 ## Features
 
 - __Title__
 At the top of the page, with a white background, easily visible with enough contrast. Changes size with screen size.
 
     ![title](https://user-images.githubusercontent.com/107180641/194577471-0da71221-8da3-4f45-b2ae-f93778b292ad.png)
-
 
 - __Buttons__
 Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
@@ -48,7 +46,6 @@ Results will be displayed as text at the top of the screen. Displays the user's 
     ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
     ![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
 
-
 - __User Prompt Text__ 
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
 
@@ -58,8 +55,6 @@ Users see it when they first enter the page, positioned under the buttons. The s
 At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw.
 
     ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
-
- 
 
 
 ### Technologies
@@ -73,12 +68,14 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 
 ## Testing
-
 - This game has been tested and works on the browsers; Google Chrome, Safari, and Microsoft Edge.
 
-- All of the features in this project work as intended on all differing screen sizes. 
-- The button icon colour change when the cursor hovers over the button. 
+- All of the features in this project work as intended on all differing screen sizes: desktops (1024px), tablets (768px), and smartphones (480px and lower). The text font size and button size decreases on smaller screens.
+
+- The button icons colour change when the cursor hovers over the button. 
+
 - The buttons all work, and the correct results messages are displayed at the top of the screen. 
+
 - The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
 
@@ -86,26 +83,23 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 | Code             | Validator                    | Results                             | Validator Link     |
 | -------------    | -------------                | --------                            |------------------  |     
-| `HTML`           | W3C HTML validator           | `No errors were found`       |   https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
+| `HTML`           | W3C HTML validator           | `No errors were found`       | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
 | `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` | https://jshint.com/                   |   
 | `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |                    |  
 
-  - __Screenshots for each validator__
+  - __Screenshots for each Validator__
     - HTML Validator
     
     ![html validator](https://user-images.githubusercontent.com/107180641/194571516-6577692a-a36c-4150-bf24-15a999e44ae6.png)
-
 
     - CSS Validator
 
     ![css validator](https://user-images.githubusercontent.com/107180641/194572138-39a81199-2376-4db5-a70d-45d049b82e8d.png)
 
-
     - JavaScript
 
     ![javascript validator](https://user-images.githubusercontent.com/107180641/194573481-c4cddcde-ffd9-4097-a664-1d042a1af397.png)
-
 
     - Lighthouse Accessibility score
 
@@ -119,6 +113,7 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 - The icon would only change colour depending on the outcome if the mouse is not hovering over the icon. But this was resolved when another class was added for user-win/lose/draw : hover, which then overrode the button : hover style.
 
+
 ### Unfixed bugs
 - When using inspect tool to check the format of the game on smaller screens the button text is present, but when the game was tested on an actual mobile device the button text was not present.
 
@@ -126,19 +121,17 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 ### Deployment
 This site was successfully deployed on Github.
 The following steps were taken to deploy the site:
-
-- In GitHub, navigate to 'Settings' at the top of the screen.
-- Then navigate to 'Pages' on the menu to the left of the screen.
-- From the Source section, select 'Deploy from a branch.'
-- For Branch, select 'Main' and '/(root)'.
+    - In GitHub, navigate to 'Settings' at the top of the screen.
+    - Then navigate to 'Pages' on the menu to the left of the screen.
+    - From the Source section, select 'Deploy from a branch.'
+    - For Branch, select 'Main' and '/(root)'.
  
 This live link to the website:
 https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
-// CONSIDER including steps for creating a local copy of the repository, through cloning and forking methods, for future developers. (comments for project 1 feedback) //
-
 
 ## Credits
+
 ### Content
 - Icons used for the buttons in the game were taken from font awesome. - https://fontawesome.com/
 
