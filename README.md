@@ -8,53 +8,67 @@ This game is for people who want to play the more complicated version of rock pa
 ## Features
 
 - __Title__
-At the top of the page, with a white background, easily visible with enough contrast. Changes size with screen size.
 
-    ![title](https://user-images.githubusercontent.com/107180641/194577471-0da71221-8da3-4f45-b2ae-f93778b292ad.png)
+    At the top of the page, with a white background, easily visible with enough contrast. Changes size with screen size.
+
+![title](https://user-images.githubusercontent.com/107180641/194577471-0da71221-8da3-4f45-b2ae-f93778b292ad.png)
 
 - __Buttons__
-Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
 
-    ![buttons](https://user-images.githubusercontent.com/107180641/194577844-fee2e61f-39f7-44cb-858e-5d24625ca680.png)
+    Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
 
-    - __Hover__ 
+![buttons](https://user-images.githubusercontent.com/107180641/194577844-fee2e61f-39f7-44cb-858e-5d24625ca680.png)
+
+- __Button Hover__ 
+    
     When the cursor hovers over the button, the colour of the icon changes (becomes more opaque) so users know which button they are hovering over. The cursor also changes from an arrow to a finger point when hovering over the button or text directly below each button so users know which button they are selecting. 
 
-        ![button hover](https://user-images.githubusercontent.com/107180641/194578255-974ca262-04fd-48d0-86ff-56b439b3b49e.png)
+![button hover](https://user-images.githubusercontent.com/107180641/194578255-974ca262-04fd-48d0-86ff-56b439b3b49e.png)
 
-    - __Active__
+- __Button Active__
+
     When the button is clicked, the game outcome is shown, with a transition of 0.2 milliseconds, and the border of the button changes colour to signify the result (green-win, red-lose, purple-draw). The user can either click the button or the text underneath the button and the computer will acknowledge this as the user's choice. This makes it easier for a user to play the game.
 
-        ![button active](https://user-images.githubusercontent.com/107180641/194578574-457c5c03-c31f-4f20-9091-e46eab07461f.png)
+![button active](https://user-images.githubusercontent.com/107180641/194578574-457c5c03-c31f-4f20-9091-e46eab07461f.png)
 
-    - __Icons__
+- __Icons__
+
     Icons from font awesome were used for each button. The icon is a visual representation of each symbol if made by their hand, which is done when the game is played in person. 
 
-    - __Buttons border change__
+- __Buttons border change__
+
     The border of buttons changes colour temporarily depending on the game result. Green for a win, Red for lose, and purple for a draw.
 
+![result with border colour](https://user-images.githubusercontent.com/107180641/194708337-a4a2da9b-caf1-499d-aaaf-0d789c4f786c.png)
+![results after border colour change](https://user-images.githubusercontent.com/107180641/194708346-9ac76101-e189-40f7-a6a9-2e2d393266c8.png)
+
 - __Computer Generated Answer__
+
 The user's choice is then compared with the computer's randomly generated choice out of the 5 options available.
 
 - __Generated Results__
+
 A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw are stated in the switch case and the default setting is to lose the game if the winning or draw combinations aren't matched.
 
 - __Results Text__
+
 Results will be displayed as text at the top of the screen. Displays the user's choice and the computer's choice and whether they win/lose or draw.
 
-    ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
-    ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
-    ![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
+![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
+![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
+![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
 
 - __User Prompt Text__ 
+
 Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
 
-    ![user prompt](https://user-images.githubusercontent.com/107180641/194579645-edc9e3e1-16c6-4ca3-9b27-f20a29479bc1.png)
+![user prompt](https://user-images.githubusercontent.com/107180641/194579645-edc9e3e1-16c6-4ca3-9b27-f20a29479bc1.png)
 
 - __Increments user/computer score__
+
 At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw.
 
-    ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
+![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
 
 
 ### Technologies
