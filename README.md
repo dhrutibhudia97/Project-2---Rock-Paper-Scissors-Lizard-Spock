@@ -40,7 +40,7 @@ The user's choice is then compared with the computer's randomly generated choice
 A switch case is used to determine the outcome of the game. The user and computer results combination to win, and draw are stated in the switch case and the default setting is to lose the game if the winning or draw combinations aren't matched.
 
 - __Results Text__
-Results will be displayed as text at the top of the screen. Displays the user's choice and computer's choice and whether they win/lose or draw.
+Results will be displayed as text at the top of the screen. Displays the user's choice and the computer's choice and whether they win/lose or draw.
 
     ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
     ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
@@ -70,9 +70,9 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 ## Testing
 - This game has been tested and works on the browsers; Google Chrome, Safari, and Microsoft Edge.
 
-- All of the features in this project work as intended on all differing screen sizes: desktops (1024px), tablets (768px), and smartphones (480px and lower). The text font size and button size decreases on smaller screens.
+- All of the features in this project work as intended on all differing screen sizes: desktops (1024px), tablets (768px), and smartphones (480px and lower). The text font size and button size decrease on smaller screens.
 
-- The button icons colour change when the cursor hovers over the button. 
+- The button icons colour changes when the cursor hovers over the button. 
 
 - The buttons all work, and the correct results messages are displayed at the top of the screen. 
 
@@ -83,10 +83,10 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 | Code             | Validator                    | Results                             | Validator Link     |
 | -------------    | -------------                | --------                            |------------------  |     
-| `HTML`           | W3C HTML validator           | `No errors were found`       | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
+| `HTML`           | W3C HTML validator           | `No errors were found.`       | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
-| `JavaScript`     | Jshint javascript validator  | `No significant errors were found.` | https://jshint.com/                   |   
-| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility`  |                    |  
+| `JavaScript`     | Jshint javascript validator  | `No significant errors were found. Only warnings if not using the esversion:6.` | https://jshint.com/                   |   
+| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility.`  |                    |  
 
   - __Screenshots for each Validator__
     - HTML Validator
