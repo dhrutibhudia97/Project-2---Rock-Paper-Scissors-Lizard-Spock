@@ -9,13 +9,13 @@ This game is for people who want to play the more complicated version of rock pa
 
 - __Title__
 
-    At the top of the page, with a white background, easily visible with enough contrast. Changes size with screen size.
+    At the top of the page, with a white background, easily visible to the user with enough colour contrast. Changes size with screen size. The user will easily be able to see the name of the game.
 
 ![title](https://user-images.githubusercontent.com/107180641/194577471-0da71221-8da3-4f45-b2ae-f93778b292ad.png)
 
 - __Buttons__
 
-    Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear which button is which option, text underneath the button to support this.
+    Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear to the user which button is which option, text underneath the button to support this.
 
 ![buttons](https://user-images.githubusercontent.com/107180641/194577844-fee2e61f-39f7-44cb-858e-5d24625ca680.png)
 
@@ -37,7 +37,7 @@ This game is for people who want to play the more complicated version of rock pa
 
 - __Buttons border change__
 
-    The border of buttons changes colour temporarily depending on the game result. Green for a win, Red for lose, and purple for a draw.
+    The border of the selected button changes colour temporarily for 0.6 seconds depending on the game result. Green for a win, Red for lose, and purple for a draw.
 
 ![result with border colour](https://user-images.githubusercontent.com/107180641/194708337-a4a2da9b-caf1-499d-aaaf-0d789c4f786c.png)
 ![results after border colour change](https://user-images.githubusercontent.com/107180641/194708346-9ac76101-e189-40f7-a6a9-2e2d393266c8.png)
@@ -52,7 +52,7 @@ A switch case is used to determine the outcome of the game. The user and compute
 
 - __Results Text__
 
-Results will be displayed as text at the top of the screen. Displays the user's choice and the computer's choice and whether they win/lose or draw.
+Results will be displayed as text at the top of the screen. Displays the user's choice and the computer's choice and whether they win/lose or draw. This stays on the screen until the user clicks another button, allowing the user to know the result of the game even after the border colour change reverts back.
 
 ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
 ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
@@ -66,7 +66,7 @@ Users see it when they first enter the page, positioned under the buttons. The s
 
 - __Increments user/computer score__
 
-At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw.
+At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw. Allows user to keep track of their current score.
 
 ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
 
@@ -90,17 +90,17 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 - The buttons all work, and the correct results messages are displayed at the top of the screen. 
 
-- The results are shown with the colour change in the button border and the incrementation of the user and computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
+- The results are shown with the correct colour change in the button border and the incrementation of the user or computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
 
 ### Validator Testing
 
-| Code             | Validator                    | Results                             | Validator Link     |
-| -------------    | -------------                | --------                            |------------------  |     
-| `HTML`           | W3C HTML validator           | `No errors were found.`       | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
+| Code        | Validator         | Results                                      | Validator Link |
+| ------------| ------------------| ---------------------------------------------|------------------|     
+| `HTML`           | W3C HTML validator           | `No errors were found.`             | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
-| `JavaScript`     | Jshint javascript validator  | `No significant errors were found. Only warnings if not using the esversion:6.` | https://jshint.com/                   |   
-| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility.`  |                    |  
+| `JavaScript`     | Jshint JavaScript validator  | `No significant errors were found. Only warnings if not using the esversion:6. The following metrics were returned: There are 19 functions in this file. Function with the largest signature take 2 arguments, while the median is 0. Largest function has 5 statements in it, while the median is 1. The most complex function has a cyclomatic complexity value of 16 while the median is 1.`                          | https://jshint.com/                   |   
+| `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility.`                 |                    |  
 
   - __Screenshots for each Validator__
     - HTML Validator
@@ -165,7 +165,7 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
     
 - Mentor meetings with Sandeep Aggarwal 
     - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result.
-    - Adding the animation duration function. 
+    - Adding the animation duration function to the button border colour change style. 
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
     - Assisted with DOMContentLoaded code at the top of the javascript file.
