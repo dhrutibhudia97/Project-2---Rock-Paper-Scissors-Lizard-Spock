@@ -70,6 +70,12 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
 
+- __Rules__
+At the bottom of the screen in the footer are the rules of the game. The white background helps differentiate it from the game area. The rules will benefit the user as they will help them understand how the game works and how to win or explain why they lost. The user will benefit to know what option beats what.
+
+![rules](https://user-images.githubusercontent.com/107180641/194763145-b558d573-10ea-4212-bfb7-c9a947f9191f.png)
+
+
 
 ### Technologies
 - HTML
