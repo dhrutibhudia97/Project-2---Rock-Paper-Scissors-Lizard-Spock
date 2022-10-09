@@ -118,6 +118,14 @@ body {
     color: rgb(128, 0, 128);
 }
 
+#footer {
+    background: white;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    padding: 10px;
+}
+
 /* Media queries for screens smaller than 507px */
 @media (max-width: 507px) {
     /* Heading */
@@ -166,7 +174,15 @@ body {
     
     #computer-score {
         margin-top: 5px;
-    }   
+    }  
+    
+    #footer {
+        background: white;
+        font-size: 14px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #000;
+        padding: 10px;
+    }
 }
 
 /*Media queries for screens smaller than 390px */
@@ -192,5 +208,13 @@ body {
 
     .button-text {
         font-size: 16px;
+    }
+
+    #footer {
+        background: white;
+        font-size: 12px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #000;
+        padding: 7px;
     }
 }

@@ -7,7 +7,7 @@ This game is for people who want to play the more complicated version of rock pa
 
 ## Features
 
-- __Title__
+- __Header__
 
     At the top of the page, with a white background, easily visible to the user with enough colour contrast. Changes size with screen size. The user will easily be able to see the name of the game.
 
