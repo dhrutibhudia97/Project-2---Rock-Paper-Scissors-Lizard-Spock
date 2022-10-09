@@ -120,22 +120,20 @@ body {
 
 /* Media queries for screens smaller than 507px */
 @media (max-width: 507px) {
-   /* Heading */
+    /* Heading */
     .heading {
         font-size:1.8rem;
         padding: 10px;
         margin: 10px;
     }
    
-    
-
-   /* Text Styling */
+    /* Text Styling */
     #result-text, 
     #user-prompt {
         font-size: 16px;
     }
 
-   /* Button Styling */
+    /* Button Styling */
     .button {
         font-size: 55px;
         margin: 15px 15px;
@@ -150,7 +148,7 @@ body {
         margin: 15px -15px;
     }
 
-   /* Score area */
+    /* Score area */
     .score-area {
         margin: 18px auto 6px;
         font-size: 1.1rem;
@@ -165,6 +163,7 @@ body {
     .scores > p {
         margin: 10px;
     }
+    
     #computer-score {
         margin-top: 5px;
     }   

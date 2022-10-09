@@ -135,10 +135,10 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 ### Deployment
 This site was successfully deployed on Github.
 The following steps were taken to deploy the site:
-    - In GitHub, navigate to 'Settings' at the top of the screen.
-    - Then navigate to 'Pages' on the menu to the left of the screen.
-    - From the Source section, select 'Deploy from a branch.'
-    - For Branch, select 'Main' and '/(root)'.
+- In GitHub, navigate to 'Settings' at the top of the screen.
+- Then navigate to 'Pages' on the menu to the left of the screen.
+- From the Source section, select 'Deploy from a branch.'
+- For Branch, select 'Main' and '/(root)'.
  
 This live link to the website:
 https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
