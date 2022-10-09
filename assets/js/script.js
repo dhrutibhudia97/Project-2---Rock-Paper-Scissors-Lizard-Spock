@@ -96,10 +96,10 @@ function won(userChoice, computerChoice) {
  */
     document.getElementById(userChoice).classList.add("user-win");
 /** 
-* Green border change animation lasts for 600 milliseconds.
-* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
-* Time of video - 1:20:30.
-*/
+ * Green border change animation lasts for 600 milliseconds.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
+ * Time of video - 1:20:30.
+ */
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-win");
     }, _ANIMATION_DURATION);
@@ -115,17 +115,17 @@ function lost(userChoice, computerChoice) {
     incrementComputerScore();
     document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW YOU LOSE :(`;
 
-    /**
+/**
  * Add style to user-lose result.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:26.
  */
     document.getElementById(userChoice).classList.add("user-lose");
 /** 
-* Red border change animation lasts for 600 milliseconds.
-* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
-* Time of video - 1:23:25
-*/
+ * Red border change animation lasts for 600 milliseconds.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
+ * Time of video - 1:23:25
+ */
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-lose");
     }, _ANIMATION_DURATION);
@@ -139,17 +139,17 @@ function lost(userChoice, computerChoice) {
 function draw(userChoice) {
     document.getElementById("result-text").innerHTML = `You both picked ${userChoice}. IT'S A DRAW!`;
 
-    /**
+/**
  * Add style to user-draw result.
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:45.
  */
     document.getElementById(userChoice).classList.add("user-draw");
 /** 
-* Purple border change animation lasts for 600 milliseconds.
-* Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
-* Time of video - 1:23:45.
-*/
+ * Purple border change animation lasts for 600 milliseconds.
+ * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
+ * Time of video - 1:23:45.
+ */
     animateUserSelection("user-draw");
     setTimeout(function() {
         document.getElementById(userChoice).classList.remove("user-draw");
