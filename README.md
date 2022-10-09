@@ -15,7 +15,7 @@ This game is for people who want to play the more complicated version of rock pa
 
 - __Buttons__
 
-    Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear to the user which button is which option, text underneath the button to support this.
+    Five buttons for each option (Rock, Paper, Scissors, Lizard, and Spock) for users to click, it has an event listener for a "click" so the console recognises when they make their choice. Identifiable using font awesome icons for each option. It's visibly clear to the user which button is which option, text underneath the button supports this.
 
 ![buttons](https://user-images.githubusercontent.com/107180641/194577844-fee2e61f-39f7-44cb-858e-5d24625ca680.png)
 
@@ -66,7 +66,7 @@ Users see it when they first enter the page, positioned under the buttons. The s
 
 - __Increments user/computer score__
 
-At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw. Allows user to keep track of their current score.
+At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw. Allows the user to keep track of their current score.
 
 ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
 
@@ -86,7 +86,7 @@ At the bottom of the screen, the results score, either gaining 1 to the user sco
 
 - All of the features in this project work as intended on all differing screen sizes: desktops (1024px), tablets (768px), and smartphones (480px and lower). The text font size and button size decrease on smaller screens.
 
-- The button icons colour changes when the cursor hovers over the button. 
+- The button icon's colour changes when the cursor hovers over the button. 
 
 - The buttons all work, and the correct results messages are displayed at the top of the screen. 
 
@@ -147,7 +147,7 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 ## Credits
 
 ### Content
-- Icons used for the buttons in the game were taken from font awesome. - https://fontawesome.com/
+- The icons used for the buttons in the game were taken from font awesome. - https://fontawesome.com/
 
 - Rules for the game were taken from this site - https://www.instructables.com/How-to-Play-Rock-Paper-Scissors-Lizard-Spock/
 
