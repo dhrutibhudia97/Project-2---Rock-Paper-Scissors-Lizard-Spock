@@ -52,11 +52,10 @@ function main() {
     });
 } 
 
-/** 
+ 
+/**
  * Determines the game output.
- * Switch case used to match the user and computer choice combination and match it to a win, lose or draw result.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org"
- * Time of video - 48.12.
+ * Game ends when user or computer score reaches 5.
  */
 function game(userChoice) {
     if (currentUserCounter >= MAX_ROUNDS) {
@@ -69,7 +68,11 @@ function game(userChoice) {
         alert("AWW! THE COMPUTER BEAT YOU THIS TIME :( PRESS RESET TO PLAY AGAIN!");
         return;
       }
-
+    /** 
+      * Switch case used to match the user and computer choice combination and match it to a win, lose or draw result.
+      * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org"
+      * Time of video - 48.12.
+      */
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
         case "ScissorsPaper":
@@ -94,6 +97,7 @@ function game(userChoice) {
         default:
             lost(userChoice, computerChoice);
     }
+    //The first to score 5 wins. The user needs to click reset game button to play again.
     if (currentUserCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
@@ -126,9 +130,6 @@ function won(userChoice, computerChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:20:30.
  */
-   // setTimeout(function() {
-     //   document.getElementById(userChoice).classList.remove("user-win");
-    //}, _ANIMATION_DURATION);
     animateUserSelection(userChoice, "user-win");
 }
 
@@ -153,9 +154,6 @@ function lost(userChoice, computerChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:25
  */
-    //setTimeout(function() {
-    //    document.getElementById(userChoice).classList.remove("user-lose");
-    //}, _ANIMATION_DURATION);
     animateUserSelection(userChoice, "user-lose");
     
 } 
@@ -179,10 +177,6 @@ function draw(userChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:45.
  */
-   // animateUserSelection("user-draw");
-   // setTimeout(function() {
-    //    document.getElementById(userChoice).classList.remove("user-draw");
-    //}, _ANIMATION_DURATION);
     animateUserSelection(userChoice, "user-draw");
 }
 
