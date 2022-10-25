@@ -59,6 +59,17 @@ function main() {
  * Time of video - 48.12.
  */
 function game(userChoice) {
+    if (currentUserCounter >= MAX_ROUNDS) {
+        // Show the final result
+        alert("CONGRATS! YOU BEAT THE COMPUTER :D. PRESS RESET TO PLAY AGAIN!");
+        return;
+      }
+      if (currentComputerCounter >= MAX_ROUNDS) {
+        // Show the final result
+        alert("AWW! THE COMPUTER BEAT YOU THIS TIME :( PRESS RESET TO PLAY AGAIN!");
+        return;
+      }
+
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
         case "ScissorsPaper":
@@ -83,18 +94,15 @@ function game(userChoice) {
         default:
             lost(userChoice, computerChoice);
     }
-    if (currentUserCounter >= MAX_ROUNDS) {
-        // Show the final result
+    if (currentUserCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME. CLICK THE RESET BUTTON TO PLAY AGAIN`;
-        alert("CONGRATS! YOU BEAT THE COMPUTER :D. PRESS RESET TO PLAY AGAIN!");
         return;
       }
-      if (currentComputerCounter >= MAX_ROUNDS) {
-        // Show the final result
+      if (currentComputerCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
-        alert("AWW! THE COMPUTER BEAT YOU THIS TIME :( PRESS RESET TO PLAY AGAIN!");
         return;
       }
+    
 }
 
 /**
