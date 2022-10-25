@@ -100,9 +100,10 @@ function won(userChoice, computerChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:20:30.
  */
-    setTimeout(function() {
-        document.getElementById(userChoice).classList.remove("user-win");
-    }, _ANIMATION_DURATION);
+   // setTimeout(function() {
+     //   document.getElementById(userChoice).classList.remove("user-win");
+    //}, _ANIMATION_DURATION);
+    animateUserSelection(userChoice, "user-win");
 }
 
 /**
@@ -126,9 +127,11 @@ function lost(userChoice, computerChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:25
  */
-    setTimeout(function() {
-        document.getElementById(userChoice).classList.remove("user-lose");
-    }, _ANIMATION_DURATION);
+    //setTimeout(function() {
+    //    document.getElementById(userChoice).classList.remove("user-lose");
+    //}, _ANIMATION_DURATION);
+    animateUserSelection(userChoice, "user-lose");
+    
 } 
 
 /**
@@ -150,10 +153,11 @@ function draw(userChoice) {
  * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
  * Time of video - 1:23:45.
  */
-    animateUserSelection("user-draw");
-    setTimeout(function() {
-        document.getElementById(userChoice).classList.remove("user-draw");
-    }, _ANIMATION_DURATION);
+   // animateUserSelection("user-draw");
+   // setTimeout(function() {
+    //    document.getElementById(userChoice).classList.remove("user-draw");
+    //}, _ANIMATION_DURATION);
+    animateUserSelection(userChoice, "user-draw");
 }
 
 /**
