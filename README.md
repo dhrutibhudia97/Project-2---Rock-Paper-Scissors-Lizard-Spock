@@ -2,7 +2,7 @@
 
 This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed.
 
-![responsive screen design](https://user-images.githubusercontent.com/107180641/194763273-a2e11c04-fcc6-45aa-96de-5c3c7d12547a.png)
+![responsive screen design](https://user-images.githubusercontent.com/107180641/197832991-62d6cb25-b82c-4cf0-aab8-8a93fbb0173e.png)
 
 
 ## Features
