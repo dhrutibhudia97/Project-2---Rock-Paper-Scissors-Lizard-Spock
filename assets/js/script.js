@@ -95,11 +95,11 @@ function game(userChoice) {
             lost(userChoice, computerChoice);
     }
     if (currentUserCounter === MAX_ROUNDS) {
-        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME. CLICK THE RESET BUTTON TO PLAY AGAIN`;
+        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
       }
       if (currentComputerCounter === MAX_ROUNDS) {
-        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
+        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME. CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
       }
     

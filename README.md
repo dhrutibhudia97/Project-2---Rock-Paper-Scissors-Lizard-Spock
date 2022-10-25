@@ -46,9 +46,12 @@ This game is for people who want to play the more complicated version of rock pa
 
     Reset button placed below scores on the screen. The user can click on this at any point in the game to refresh the page and start game again as the scores are reset to 0. They are prompted to do so after either the user or computer reaches a score of 5, in the alert message and in the results-text message. Game can only continue after this if the user clicks the reset button. This allows users to reach a definite end point of the game.
 
+![reset button](https://user-images.githubusercontent.com/107180641/197827228-935c158f-cb62-4e90-a5c5-dd84bd6a413d.png)
+
+
 - __Alert Message__
 
-    Alert message shows up on screen when either the user or computer reach the score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button. This message does not show up on mobile devices.
+    Alert message shows up on screen when either the user or computer reach the score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button.
     
 
 - __Computer Generated Answer__
@@ -67,6 +70,8 @@ When either the user or computer reach a score of 5, the results-text notifies t
 ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
 ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
 ![results text draw](https://user-images.githubusercontent.com/107180641/194584910-71beb946-1628-46d0-8dbc-56e09631eb70.png)
+![end game results win](https://user-images.githubusercontent.com/107180641/197829102-8689448d-f2e1-42f1-94c1-0ee348061a53.png)
+![end game results lose](https://user-images.githubusercontent.com/107180641/197829119-53f991db-835a-45f2-b222-2a511c4da2c8.png)
 
 - __User Prompt Text__ 
 
