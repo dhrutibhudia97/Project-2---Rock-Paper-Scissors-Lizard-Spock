@@ -74,14 +74,9 @@ body {
     height: 65px;
     background-color: #fff;
     color:rgb(0, 0, 139);
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
-#reset :hover {
-    color: #a9a9a9; 
-    
-}
 
 /* Score Area styling */
 .score-area {
