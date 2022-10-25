@@ -10,6 +10,12 @@ main();
 // Animation duration of the border colour change.
 const _ANIMATION_DURATION = 600;
 
+const MAX_ROUNDS = 5;
+
+let currentUserCounter = 0;
+
+let currentComputerCounter = 0;
+
 // The choices the computer can randomly select.
 const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
@@ -53,6 +59,15 @@ function main() {
  * Time of video - 48.12.
  */
 function game(userChoice) {
+    if (currentUserCounter >= MAX_ROUNDS) {
+        // Show the final result
+        return;
+      }
+      if (currentComputerCounter >= MAX_ROUNDS) {
+        // Show the final result
+        return;
+      }
+
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
         case "ScissorsPaper":
@@ -178,6 +193,7 @@ function animateUserSelection(userChoice, animationClass) {
 function incrementUserScore() {
     let oldScore = parseInt(document.getElementById("user-score").innerText);
     document.getElementById("user-score").innerText = ++oldScore;
+    ++currentUserCounter;
 }
 
 /**
@@ -187,4 +203,5 @@ function incrementUserScore() {
 function incrementComputerScore() {
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldScore;
+    ++currentComputerCounter;
 }
