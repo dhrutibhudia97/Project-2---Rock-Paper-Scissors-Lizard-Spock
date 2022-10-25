@@ -65,6 +65,24 @@ body {
     color: #00008b;
 }
 
+#reset {
+    font-size: 25px;
+    margin: 5px;
+    border-radius:25%;
+    padding: 5px;
+    width: 195px;
+    height: 65px;
+    background-color: #fff;
+    color:rgb(0, 0, 139);
+    cursor: pointer;
+    
+}
+
+#reset :hover {
+    color: #a9a9a9; 
+    
+}
+
 /* Score Area styling */
 .score-area {
     margin: 15px auto;
@@ -156,6 +174,12 @@ body {
         margin: 15px -15px;
     }
 
+    #reset {
+        font-size: 18px;
+        width: 120px;
+        height: 45px;
+    }
+
     /* Score area */
     .score-area {
         margin: 18px auto 6px;
@@ -210,6 +234,12 @@ body {
         font-size: 16px;
     }
 
+    #reset {
+        font-size: 16px;
+        width: 110px;
+        height: 45px;
+    }
+    
     #footer {
         background: white;
         font-size: 12px;
