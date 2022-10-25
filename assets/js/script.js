@@ -61,13 +61,16 @@ function main() {
 function game(userChoice) {
     if (currentUserCounter >= MAX_ROUNDS) {
         // Show the final result
+        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS! YOU BEAT THE COMPUTER. PRESS RESET TO PLAY AGAIN.`;
+        alert("CONGRATS! YOU BEAT THE COMPUTER :D. PRESS RESET TO PLAY AGAIN!");
         return;
       }
       if (currentComputerCounter >= MAX_ROUNDS) {
         // Show the final result
+        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! THE COMPUTER BEAT YOU. PRESS RESET TO PLAY AGAIN.`;
+        alert("AWW! THE COMPUTER BEAT YOU :( PRESS RESET TO PLAY AGAIN!");
         return;
       }
-
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
         case "ScissorsPaper":
