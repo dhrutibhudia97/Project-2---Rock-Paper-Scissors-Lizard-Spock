@@ -51,8 +51,11 @@ This game is for people who want to play the more complicated version of rock pa
 
 - __Alert Message__
 
-    Alert message shows up on screen when either the user or computer reach the score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button.
+    The alert message shows up on the screen when either the user or computer reaches a score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button. If the user tries to continue the game after a score of 5 is reached, the alert message will repeatedly pop up to remind them to click the reset button.
     
+![end game alert win](https://user-images.githubusercontent.com/107180641/197830702-aad3309b-d299-49cf-a706-ab2c35daa4b0.png)
+![end game alert lose](https://user-images.githubusercontent.com/107180641/197830726-7e309781-8e46-4f70-9cb7-48cb2f3eac4d.png)
+
 
 - __Computer Generated Answer__
 
@@ -65,7 +68,7 @@ A switch case is used to determine the outcome of the game. The user and compute
 - __Results Text__
 
 Results will be displayed as text at the top of the screen. Displays the user's choice and the computer's choice and whether they win/lose or draw. This stays on the screen until the user clicks another button, allowing the user to know the result of the game even after the border colour change reverts back.
-When either the user or computer reach a score of 5, the results-text notifies the user who won the overall game (out of 5) and they are notified that to continue the game they will need to click the reset button.
+When either the user or computer reaches a score of 5, the results-text notifies the user who won the overall game (out of 5) and they are notified that to continue the game they will need to click the reset button.
 
 ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
 ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
