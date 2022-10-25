@@ -42,6 +42,15 @@ This game is for people who want to play the more complicated version of rock pa
 ![result with border colour](https://user-images.githubusercontent.com/107180641/194708337-a4a2da9b-caf1-499d-aaaf-0d789c4f786c.png)
 ![results after border colour change](https://user-images.githubusercontent.com/107180641/194708346-9ac76101-e189-40f7-a6a9-2e2d393266c8.png)
 
+- __Reset Button__
+
+    Reset button placed below scores on the screen. The user can click on this at any point in the game to refresh the page and start game again as the scores are reset to 0. They are prompted to do so after either the user or computer reaches a score of 5, in the alert message and in the results-text message. Game can only continue after this if the user clicks the reset button. This allows users to reach a definite end point of the game.
+
+- __Alert Message__
+
+    Alert message shows up on screen when either the user or computer reach the score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button. This message does not show up on mobile devices.
+    
+
 - __Computer Generated Answer__
 
 The user's choice is then compared with the computer's randomly generated choice out of the 5 options available.
@@ -53,6 +62,7 @@ A switch case is used to determine the outcome of the game. The user and compute
 - __Results Text__
 
 Results will be displayed as text at the top of the screen. Displays the user's choice and the computer's choice and whether they win/lose or draw. This stays on the screen until the user clicks another button, allowing the user to know the result of the game even after the border colour change reverts back.
+When either the user or computer reach a score of 5, the results-text notifies the user who won the overall game (out of 5) and they are notified that to continue the game they will need to click the reset button.
 
 ![result text win](https://user-images.githubusercontent.com/107180641/194585170-e92a98c3-bf16-4efb-b0e9-969c1f96f5d9.png)
 ![results text](https://user-images.githubusercontent.com/107180641/194580365-848bbd40-f4b0-4843-a435-b2899f69f5a4.png)
