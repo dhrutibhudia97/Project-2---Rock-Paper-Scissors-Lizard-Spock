@@ -137,7 +137,7 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
     - JavaScript
 
-    ![javascript validator](https://user-images.githubusercontent.com/107180641/194573481-c4cddcde-ffd9-4097-a664-1d042a1af397.png)
+    ![javascript validator](https://user-images.githubusercontent.com/107180641/197834869-03085b71-038f-4f10-afe0-97ae9289bcc0.png)
 
     - Lighthouse Accessibility score
 
