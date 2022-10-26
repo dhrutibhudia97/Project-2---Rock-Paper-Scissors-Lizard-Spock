@@ -1,9 +1,8 @@
 //Wait for the DOM to finish loading before running the game.
 //Code from https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading. 
-document.addEventListener('DOMContentLoaded', (_event) => {
-    console.log('DOM fully loaded');
+  document.addEventListener('DOMContentLoaded', (_event) => {
+    main();
   });
-main();
 
 // Animation duration of the border colour change.
 const _ANIMATION_DURATION = 600;
