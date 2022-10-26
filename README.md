@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock Game
 
-This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed.
+This game is for people who want to play the more complicated version of rock paper scissors from the well-known tv series "The Big Bang Theory". This game has 2 extra options: Lizard and Spock which make the game less predictable and more challenging. The user will play against the computer, in a game of chance, they can win, lose or draw against the computer's randomly generated answer. The first to score 5 wins. This game will benefit users by becoming a source of entertainment that is easily accessible and low effort on the user's part with no prior knowledge needed as the rules are stated at the bottom of the screen.
 
 ![responsive screen design](https://user-images.githubusercontent.com/107180641/197832991-62d6cb25-b82c-4cf0-aab8-8a93fbb0173e.png)
 
@@ -42,20 +42,6 @@ This game is for people who want to play the more complicated version of rock pa
 ![result with border colour](https://user-images.githubusercontent.com/107180641/194708337-a4a2da9b-caf1-499d-aaaf-0d789c4f786c.png)
 ![results after border colour change](https://user-images.githubusercontent.com/107180641/194708346-9ac76101-e189-40f7-a6a9-2e2d393266c8.png)
 
-- __Reset Button__
-
-    Reset button placed below scores on the screen. The user can click on this at any point in the game to refresh the page and start game again as the scores are reset to 0. They are prompted to do so after either the user or computer reaches a score of 5, in the alert message and in the results-text message. Game can only continue after this if the user clicks the reset button. This allows users to reach a definite end point of the game.
-
-![reset button](https://user-images.githubusercontent.com/107180641/197827228-935c158f-cb62-4e90-a5c5-dd84bd6a413d.png)
-
-
-- __Alert Message__
-
-    The alert message shows up on the screen when either the user or computer reaches a score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button. If the user tries to continue the game after a score of 5 is reached, the alert message will repeatedly pop up to remind them to click the reset button.
-    
-![end game alert win](https://user-images.githubusercontent.com/107180641/197830702-aad3309b-d299-49cf-a706-ab2c35daa4b0.png)
-![end game alert lose](https://user-images.githubusercontent.com/107180641/197830726-7e309781-8e46-4f70-9cb7-48cb2f3eac4d.png)
-
 
 - __Computer Generated Answer__
 
@@ -78,15 +64,31 @@ When either the user or computer reaches a score of 5, the results-text notifies
 
 - __User Prompt Text__ 
 
-Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon.
+Users see it when they first enter the page, positioned under the buttons. The short, easy-to-read sentence allows users to know that to start the game, they need to click an icon and that the winner is the first to score 5.
 
-![user prompt](https://user-images.githubusercontent.com/107180641/194579645-edc9e3e1-16c6-4ca3-9b27-f20a29479bc1.png)
+![user prompt](https://user-images.githubusercontent.com/107180641/198008723-77d60c6c-4a57-4520-96cd-db31cab66819.png)
+
 
 - __Increments user/computer score__
 
 At the bottom of the screen, the results score, either gaining 1 to the user score if the user wins, gaining 1 to the computer score if the computer wins or no changes to the score made if it's a draw. Allows the user to keep track of their current score.
 
 ![user and computer score](https://user-images.githubusercontent.com/107180641/194581111-52ad3a95-4dc3-45df-a1cd-70487d3a524f.png)
+
+- __Reset Button__
+
+    The reset button is placed below scores on the screen. The user can click on this at any point in the game to refresh the page and start the game again as the scores are reset to 0. They are prompted to do so after either the user or computer reaches a score of 5, in the alert message and the results-text message. The game can only continue after this if the user clicks the reset button. This allows users to reach a definite end point of the game.
+
+![reset button](https://user-images.githubusercontent.com/107180641/197827228-935c158f-cb62-4e90-a5c5-dd84bd6a413d.png)
+
+
+- __Alert Message__
+
+    The alert message shows up on the screen when either the user or computer reaches a score of 5. This alerts the user who won the overall game and notifies them that to continue to play they need to click the reset button. If the user tries to continue the game after a score of 5 is reached, the alert message will repeatedly pop up to remind them to click the reset button.
+    
+![end game alert win](https://user-images.githubusercontent.com/107180641/197830702-aad3309b-d299-49cf-a706-ab2c35daa4b0.png)
+![end game alert lose](https://user-images.githubusercontent.com/107180641/197830726-7e309781-8e46-4f70-9cb7-48cb2f3eac4d.png)
+
 
 - __Rules__
 At the bottom of the screen in the footer are the rules of the game. The white background helps differentiate it from the game area. The rules will benefit the user as they will help them understand how the game works and how to win or explain why they lost. The user will benefit to know what option beats what.
