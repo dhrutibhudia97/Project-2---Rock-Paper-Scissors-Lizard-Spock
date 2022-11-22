@@ -8,11 +8,17 @@
 const _ANIMATION_DURATION = 600;
 
 // Number of rounds before game ends
-const MAX_ROUNDS = 5;
+//const MAX_ROUNDS = 5;
 
 let currentUserCounter = 0;
 
 let currentComputerCounter = 0;
+
+// User choses number of games to play
+var threeGames = getElementById("3-games").value;
+var fiveGames = getElementById("5-games").value;
+var sevenGames = getElementById("7-games").value;
+
 
 // The choices the computer can randomly select.
 const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
@@ -27,6 +33,28 @@ function getComputerChoice() {
     return CHOICES[randomChoice];
 }
 
+
+/** 
+ * user chooses how many games they want to play.
+ *
+ */
+function gamenum() {
+// Start first to 3 game
+document.getElementById("threeGames").addEventListener("click", function() { 
+    game ();
+    gamenum = 3;
+});
+document.getElementById("fiveGames").addEventListener("click", function() {
+    game (); 
+    gamenum = 5;
+});
+document.getElementById("sevenGames").addEventListener("click", function() {
+    game (); 
+    gamenum = 7;
+});
+}
+
+
 /**
  * User clicking each button recognised by the game.
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
@@ -39,6 +67,8 @@ function main() {
     document.getElementById("Paper").addEventListener("click", function() {
         game("Paper");
     });
+
+    //choices buttons
     document.getElementById("Scissors").addEventListener("click", function() {
         game("Scissors");
     });
@@ -55,12 +85,12 @@ function main() {
  * Game ends when user or computer score reaches 5.
  */
 function game(userChoice) {
-    if (currentUserCounter >= MAX_ROUNDS) {
+    if (currentUserCounter >= gamenum) {
         // Shows the final result that the user wins 
         alert("CONGRATS! YOU BEAT THE COMPUTER :D. PRESS RESET TO PLAY AGAIN!");
         return;
     }
-    if (currentComputerCounter >= MAX_ROUNDS) {
+    if (currentComputerCounter >= gamenum) {
         // Shows the final result that the computer wins
         alert("AWW! THE COMPUTER BEAT YOU THIS TIME :( PRESS RESET TO PLAY AGAIN!");
         return;
@@ -95,11 +125,11 @@ function game(userChoice) {
             lost(userChoice, computerChoice);
     }
     //The first to score 5 wins. The user needs to click reset game button to play again.
-    if (currentUserCounter === MAX_ROUNDS) {
+    if (currentUserCounter === gamenum) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
     }
-    if (currentComputerCounter === MAX_ROUNDS) {
+    if (currentComputerCounter === gamenum) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME. CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
     } 
