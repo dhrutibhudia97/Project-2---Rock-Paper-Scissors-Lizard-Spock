@@ -40,27 +40,34 @@ function getComputerChoice() {
  */
 function gamenum() {
 // Start first to 3 game
+if
 document.getElementById("threeGames").addEventListener("click", function() { 
     game ();
     gamenum = 3;
+    main() true
 });
 document.getElementById("fiveGames").addEventListener("click", function() {
     game (); 
     gamenum = 5;
+    main() true
 });
 document.getElementById("sevenGames").addEventListener("click", function() {
     game (); 
     gamenum = 7;
+    main() true
 });
+else main() false
 }
 
 
-/**
+/**c
  * User clicking each button recognised by the game.
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
  * Time of video - 34:35.
  */
 function main() {
+    if true
+    //choices buttons
     document.getElementById("Rock").addEventListener("click", function() {
         game("Rock");
     });
@@ -68,7 +75,6 @@ function main() {
         game("Paper");
     });
 
-    //choices buttons
     document.getElementById("Scissors").addEventListener("click", function() {
         game("Scissors");
     });
@@ -78,6 +84,7 @@ function main() {
     document.getElementById("Spock").addEventListener("click", function() {
         game("Spock");
     });
+    else false
 } 
 
 /**
@@ -85,12 +92,12 @@ function main() {
  * Game ends when user or computer score reaches 5.
  */
 function game(userChoice) {
-    if (currentUserCounter >= gamenum) {
+    if (currentUserCounter >= gamenum.innerText) {
         // Shows the final result that the user wins 
         alert("CONGRATS! YOU BEAT THE COMPUTER :D. PRESS RESET TO PLAY AGAIN!");
         return;
     }
-    if (currentComputerCounter >= gamenum) {
+    if (currentComputerCounter >= gamenum.innerText) {
         // Shows the final result that the computer wins
         alert("AWW! THE COMPUTER BEAT YOU THIS TIME :( PRESS RESET TO PLAY AGAIN!");
         return;
