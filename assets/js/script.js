@@ -8,16 +8,23 @@
 const _ANIMATION_DURATION = 600;
 
 // Number of rounds before game ends
-//const MAX_ROUNDS = 5;
+//const GAME_ROUNDS = {
+//    THREE_GAMES: 3,
+//    DEFAULT_FIVE_GAMES: 5,
+//    SEVEN_GAMES: 7
+//}
 
+//let gameRounds = GAME_ROUNDS.DEFAULT_FIVE_GAMES
+const MAX_ROUNDS = 5;
 let currentUserCounter = 0;
 
 let currentComputerCounter = 0;
 
 // User choses number of games to play
-var threeGames = getElementById("3-games").value;
-var fiveGames = getElementById("5-games").value;
-var sevenGames = getElementById("7-games").value;
+
+//var threeGames = getElementById("3-games").value;
+//var fiveGames = getElementById("5-games").value;
+//var sevenGames = getElementById("7-games").value;
 
 
 // The choices the computer can randomly select.
@@ -38,26 +45,21 @@ function getComputerChoice() {
  * user chooses how many games they want to play.
  *
  */
-function gamenum() {
-// Start first to 3 game
-if
-document.getElementById("threeGames").addEventListener("click", function() { 
-    game ();
-    gamenum = 3;
-    main() true
-});
-document.getElementById("fiveGames").addEventListener("click", function() {
-    game (); 
-    gamenum = 5;
-    main() true
-});
-document.getElementById("sevenGames").addEventListener("click", function() {
-    game (); 
-    gamenum = 7;
-    main() true
-});
-else main() false
-}
+//function gameRounds() {
+//Start first to 3 game
+//document.getElementById("threeGames").addEventListener("click", function() { 
+//   main ();
+//   GAME_ROUNDS.THREE_GAMES
+//});
+//document.getElementById("fiveGames").addEventListener("click", function() {
+//    main (); 
+//    GAME_ROUNDS.DEFAULT_FIVE_GAMES
+//});
+//document.getElementById("sevenGames").addEventListener("click", function() {
+//    main (); 
+//    GAME_ROUNDS.SEVEN_GAMES
+//});
+//}
 
 
 /**c
@@ -66,7 +68,6 @@ else main() false
  * Time of video - 34:35.
  */
 function main() {
-    if true
     //choices buttons
     document.getElementById("Rock").addEventListener("click", function() {
         game("Rock");
@@ -84,7 +85,6 @@ function main() {
     document.getElementById("Spock").addEventListener("click", function() {
         game("Spock");
     });
-    else false
 } 
 
 /**
@@ -92,12 +92,12 @@ function main() {
  * Game ends when user or computer score reaches 5.
  */
 function game(userChoice) {
-    if (currentUserCounter >= gamenum.innerText) {
+    if (currentUserCounter >= MAX_ROUNDS) {
         // Shows the final result that the user wins 
         alert("CONGRATS! YOU BEAT THE COMPUTER :D. PRESS RESET TO PLAY AGAIN!");
         return;
     }
-    if (currentComputerCounter >= gamenum.innerText) {
+    if (currentComputerCounter >= MAX_ROUNDS) {
         // Shows the final result that the computer wins
         alert("AWW! THE COMPUTER BEAT YOU THIS TIME :( PRESS RESET TO PLAY AGAIN!");
         return;
@@ -132,11 +132,11 @@ function game(userChoice) {
             lost(userChoice, computerChoice);
     }
     //The first to score 5 wins. The user needs to click reset game button to play again.
-    if (currentUserCounter === gamenum) {
+    if (currentUserCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
     }
-    if (currentComputerCounter === gamenum) {
+    if (currentComputerCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME. CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
     } 
