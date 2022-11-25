@@ -139,11 +139,12 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
     - JavaScript
 
-    ![javascript validator](https://user-images.githubusercontent.com/107180641/197834869-03085b71-038f-4f10-afe0-97ae9289bcc0.png)
+    ![javascript validator](https://user-images.githubusercontent.com/107180641/204043143-34697d56-7418-49cc-bb89-a35d7181e134.png)
+
 
     - Lighthouse Accessibility score
 
-    ![light house score](https://user-images.githubusercontent.com/107180641/194574413-bc7d29de-9324-4c97-abf9-5fd6c8667f10.png)
+    ![light house score js](https://user-images.githubusercontent.com/107180641/204043672-ba68177f-f036-4ee9-9133-d5dbdf8cfee4.png)
 
 
 ### Fixed Bugs
