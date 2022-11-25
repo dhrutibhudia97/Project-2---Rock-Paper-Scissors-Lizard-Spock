@@ -125,7 +125,7 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 | ------------| ------------------| ---------------------------------------------|------------------|     
 | `HTML`           | W3C HTML validator           | `No errors were found.`             | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
-| `JavaScript`     | Jshint JavaScript validator  | `There are 16 functions in this file. Function with the largest signature take 2 arguments, while the median is 0. Largest function has 14 statements in it, while the median is 1.5. The most complex function has a cyclomatic complexity value of 20 while the median is 1.`                          | https://jshint.com/                   |   
+| `JavaScript`     | Jshint JavaScript validator  | `There are 16 functions in this file. The function with the largest signature takes 2 arguments, while the median is 0. The largest function has 14 statements in it, while the median is 1.5. The most complex function has a cyclomatic complexity value of 20 while the median is 1.`                          | https://jshint.com/                   |   
 | `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility.`                 |                    |  
 
   - __Screenshots for each Validator__
@@ -137,12 +137,12 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
     ![css validator](https://user-images.githubusercontent.com/107180641/194572138-39a81199-2376-4db5-a70d-45d049b82e8d.png)
 
-    - JavaScript
+    - JavaScript Validator
 
     ![javascript validator](https://user-images.githubusercontent.com/107180641/204043143-34697d56-7418-49cc-bb89-a35d7181e134.png)
 
 
-    - Lighthouse Accessibility score
+    - Lighthouse Accessibility Score
 
     ![light house score js](https://user-images.githubusercontent.com/107180641/204043672-ba68177f-f036-4ee9-9133-d5dbdf8cfee4.png)
 
@@ -157,7 +157,7 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
 ### Unfixed bugs
 - When using inspect tool to check the format of the game on smaller screens the button text is present, but when the game was tested on an actual mobile device the button text was not present.
-- When running the game, console warning of "DevTools failed to load source map" but the file cannot be accessed. This doesn't effect the functionality of the game.
+- When running the game, the console warning of "DevTools failed to load source map" but the file cannot be accessed. This doesn't affect the functionality of the game.
 
 
 ### Deployment
@@ -182,7 +182,7 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 ### Coding Assistance/ Acknowledgements
 - The Code Institutes Love Maths module 
     - Assisted with using JavaScript to increment user and computer scores in the won and lost functions.
-    - Assisted with creating random generator for the computers choice. 
+    - Assisted with creating a random generator for the computer's choice. 
     - The styling buttons for active/hover options. 
     - CSS styling to help with media queries on smaller screens.
 

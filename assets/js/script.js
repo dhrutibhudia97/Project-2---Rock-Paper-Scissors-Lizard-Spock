@@ -7,7 +7,7 @@
 // Animation duration of the border colour change.
 const _ANIMATION_DURATION = 600;
 
-// Maximium score that the user or computer can reach to end the game.
+// Maximum score that the user or computer can reach to end the game.
 const MAX_ROUNDS = 5;
 
 let currentUserCounter = 0;
@@ -18,7 +18,7 @@ let currentComputerCounter = 0;
 const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 /**
- * The computers choice is randomly generated. 
+ * The computer's choice is randomly generated out of the choice options using the math.random function.
  */
 function getComputerChoice() {
     const randomlyGeneratedChoice = [Math.floor(Math.random() * CHOICES.length)];
@@ -26,12 +26,11 @@ function getComputerChoice() {
 }
 
 /**
- * User clicking each button recognised by the game.
+ * User clicking each button recognised by the game function.
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
  * Time of video - 34:35.
  */
 function main() {
-    //choices buttons
     document.getElementById("Rock").addEventListener("click", function() {
         game("Rock");
     });
@@ -51,7 +50,7 @@ function main() {
 
 /**
  * Determines the game output.
- * Game ends when user or computer score reaches 5.
+ * Game ends when the user or computer score reaches the max round number which is 5.
  */
 function game(userChoice) {
     if (currentUserCounter >= MAX_ROUNDS) {
@@ -94,7 +93,7 @@ function game(userChoice) {
             lost(userChoice, computerChoice);
     }
 
-    //The first to score 5 wins. The user needs to click reset game button to play again.
+    //The first to score 5 wins. The user needs to click the reset game button to play again.
     if (currentUserCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
@@ -106,14 +105,14 @@ function game(userChoice) {
 }
 
 /**
- * Won outcome determined, displays result-text message at the top of the screen.
+ * Won outcome determined, displays a result-text message at the top of the screen.
  * Increments user score by one.
  */
 function won(userChoice, computerChoice) {
     incrementUserScore();
     document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice}. CONGRATS YOU WIN :D`;
     
-    //Add style to user-win result.
+    //Adds temporary style to user-win result.
     //Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
     //Time of video - 1:16:21.
     document.getElementById(userChoice).classList.add("user-win");
@@ -125,7 +124,7 @@ function won(userChoice, computerChoice) {
 }
 
 /**
- * Lost outcome determined, displays result-text message at the top of the screen.
+ * Lost outcome determined, displays a result-text message at the top of the screen.
  * Increments computer score by one.
  */
 function lost(userChoice, computerChoice) {
@@ -141,7 +140,7 @@ function lost(userChoice, computerChoice) {
 } 
 
 /** 
- * Draw outcome determined, displays result-text message at the top of the screen.
+ * Draw outcome determined, displays a result-text message at the top of the screen.
  */
 function draw(userChoice) {
     document.getElementById("result-text").innerHTML = `You both picked ${userChoice}. IT'S A DRAW!`;
