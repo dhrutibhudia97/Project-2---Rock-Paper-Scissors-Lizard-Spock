@@ -18,13 +18,11 @@ let currentComputerCounter = 0;
 const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 /**
- * Computer random choice is generated. 
- * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0". 
- * Time of video - 39:10.
+ * The computers choice is randomly generated. 
  */
 function getComputerChoice() {
-    const randomChoice = [Math.floor(Math.random() * CHOICES.length)];
-    return CHOICES[randomChoice];
+    const randomlyGeneratedChoice = [Math.floor(Math.random() * CHOICES.length)];
+    return CHOICES[randomlyGeneratedChoice];
 }
 
 /**
@@ -40,7 +38,6 @@ function main() {
     document.getElementById("Paper").addEventListener("click", function() {
         game("Paper");
     });
-
     document.getElementById("Scissors").addEventListener("click", function() {
         game("Scissors");
     });

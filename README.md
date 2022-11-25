@@ -180,12 +180,12 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 ### Coding Assistance/ Acknowledgements
 - The Code Institutes Love Maths module 
     - Assisted with using JavaScript to increment user and computer scores. 
+    - Assisted with creating random generator for the computers choice. 
     - The styling buttons for active/hover options. 
     - CSS styling to help with media queries on smaller screens.
 
 - Youtube tutorial - "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org" 
     - Assisted with JavaScript switch cases for result outcome.
-    - Use of random generator for computer choices. 
     - Adding function to buttons by adding event listeners.
     - Assisted with making the border colour change temporary. 
     
