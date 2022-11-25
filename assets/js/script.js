@@ -7,24 +7,11 @@
 // Animation duration of the border colour change.
 const _ANIMATION_DURATION = 600;
 
-// Number of rounds before game ends
-//const GAME_ROUNDS = {
-//    THREE_GAMES: 3,
-//    DEFAULT_FIVE_GAMES: 5,
-//    SEVEN_GAMES: 7
-//}
-
-//let gameRounds = GAME_ROUNDS.DEFAULT_FIVE_GAMES
 const MAX_ROUNDS = 5;
+
 let currentUserCounter = 0;
 
 let currentComputerCounter = 0;
-
-// User choses number of games to play
-
-//var threeGames = getElementById("3-games").value;
-//var fiveGames = getElementById("5-games").value;
-//var sevenGames = getElementById("7-games").value;
 
 
 // The choices the computer can randomly select.
@@ -40,29 +27,7 @@ function getComputerChoice() {
     return CHOICES[randomChoice];
 }
 
-
-/** 
- * user chooses how many games they want to play.
- *
- */
-//function gameRounds() {
-//Start first to 3 game
-//document.getElementById("threeGames").addEventListener("click", function() { 
-//   main ();
-//   GAME_ROUNDS.THREE_GAMES
-//});
-//document.getElementById("fiveGames").addEventListener("click", function() {
-//    main (); 
-//    GAME_ROUNDS.DEFAULT_FIVE_GAMES
-//});
-//document.getElementById("sevenGames").addEventListener("click", function() {
-//    main (); 
-//    GAME_ROUNDS.SEVEN_GAMES
-//});
-//}
-
-
-/**c
+/**
  * User clicking each button recognised by the game.
  * Code credited to youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0".
  * Time of video - 34:35.
@@ -137,7 +102,7 @@ function game(userChoice) {
         return;
     }
     if (currentComputerCounter === MAX_ROUNDS) {
-        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME. CLICK THE RESET BUTTON TO PLAY AGAIN`;
+        document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW! YOU LOSE THE GAME :( CLICK THE RESET BUTTON TO PLAY AGAIN`;
         return;
     } 
 }
