@@ -7,10 +7,10 @@
 // Animation duration of the border colour change.
 const _ANIMATION_DURATION = 600;
 
+// Maximium score that the user or computer can reach to end the game.
 const MAX_ROUNDS = 5;
 
 let currentUserCounter = 0;
-
 let currentComputerCounter = 0;
 
 

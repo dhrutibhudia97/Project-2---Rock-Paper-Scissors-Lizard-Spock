@@ -125,7 +125,7 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 | ------------| ------------------| ---------------------------------------------|------------------|     
 | `HTML`           | W3C HTML validator           | `No errors were found.`             | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
-| `JavaScript`     | Jshint JavaScript validator  | `No significant errors were found. Only warnings if not using the esversion:6. The following metrics were returned: There are 19 functions in this file. Function with the largest signature take 2 arguments, while the median is 0. Largest function has 5 statements in it, while the median is 1. The most complex function has a cyclomatic complexity value of 16 while the median is 1.`                          | https://jshint.com/                   |   
+| `JavaScript`     | Jshint JavaScript validator  | `There are 16 functions in this file. Function with the largest signature take 2 arguments, while the median is 0. Largest function has 14 statements in it, while the median is 1.5. The most complex function has a cyclomatic complexity value of 20 while the median is 1.`                          | https://jshint.com/                   |   
 | `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility.`                 |                    |  
 
   - __Screenshots for each Validator__
@@ -156,6 +156,7 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
 ### Unfixed bugs
 - When using inspect tool to check the format of the game on smaller screens the button text is present, but when the game was tested on an actual mobile device the button text was not present.
+- When running the game, console warning of "DevTools failed to load source map" but the file cannot be accessed. This doesn't effect the functionality of the game.
 
 
 ### Deployment
