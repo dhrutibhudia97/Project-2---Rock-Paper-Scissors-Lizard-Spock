@@ -179,13 +179,13 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 ### Coding Assistance/ Acknowledgements
 - The Code Institutes Love Maths module 
-    - Assisted with using JavaScript to increment user and computer scores. 
+    - Assisted with using JavaScript to increment user and computer scores in the won and lost functions.
     - Assisted with creating random generator for the computers choice. 
     - The styling buttons for active/hover options. 
     - CSS styling to help with media queries on smaller screens.
 
 - Youtube tutorial - "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org" 
-    - Assisted with JavaScript switch cases for result outcome.
+    - Assisted with JavaScript switch cases for the win and draw result outcomes.
     - Adding function to buttons by adding event listeners.
     - Assisted with making the border colour change temporary. 
     
@@ -195,3 +195,6 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
     - Assisted with DOMContentLoaded code at the top of the javascript file.
+
+- https://www.w3schools.com/js/js_htmldom_html.asp
+    - Assisted with changing results text when user won/lost/draw by using ".innerHTML".

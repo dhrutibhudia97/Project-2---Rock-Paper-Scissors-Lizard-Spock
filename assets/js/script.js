@@ -66,7 +66,7 @@ function game(userChoice) {
     }
     /** 
       * Switch case used to match the user and computer choice combination and match it to a win, lose or draw result.
-      * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org"
+      * Partial credit for the win and draw outcomes which were written with help from the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org"
       * Time of video - 48.12.
       */
     const computerChoice = getComputerChoice();
@@ -93,6 +93,7 @@ function game(userChoice) {
         default:
             lost(userChoice, computerChoice);
     }
+
     //The first to score 5 wins. The user needs to click reset game button to play again.
     if (currentUserCounter === MAX_ROUNDS) {
         document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D CLICK THE RESET BUTTON TO PLAY AGAIN`;
@@ -107,8 +108,6 @@ function game(userChoice) {
 /**
  * Won outcome determined, displays result-text message at the top of the screen.
  * Increments user score by one.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
- * Time of video - 56:00.
  */
 function won(userChoice, computerChoice) {
     incrementUserScore();
@@ -128,8 +127,6 @@ function won(userChoice, computerChoice) {
 /**
  * Lost outcome determined, displays result-text message at the top of the screen.
  * Increments computer score by one.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
- * Time of video - 1:08:30.
  */
 function lost(userChoice, computerChoice) {
     incrementComputerScore();
@@ -145,8 +142,6 @@ function lost(userChoice, computerChoice) {
 
 /** 
  * Draw outcome determined, displays result-text message at the top of the screen.
- * Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
- * Time of video - 1:10:30.
  */
 function draw(userChoice) {
     document.getElementById("result-text").innerHTML = `You both picked ${userChoice}. IT'S A DRAW!`;
