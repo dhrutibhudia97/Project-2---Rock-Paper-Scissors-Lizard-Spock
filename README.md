@@ -118,14 +118,17 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
 - The results are shown with the correct colour change in the button border and the incrementation of the user or computer scores at the bottom of the page, none being incremented when the game outcome is a draw.
 
+- The game ends when a score of 5 is reached. The result-text message and alert message notify the user that they need to click the reset button to continue.
+
+
 
 ### Validator Testing
 
-| Code        | Validator         | Results                                      | Validator Link |
-| ------------| ------------------| ---------------------------------------------|------------------|     
+| Code       | Validator       | Results                                      | Validator Link  |
+| -----------| ----------------| ---------------------------------------------|-----------------|     
 | `HTML`           | W3C HTML validator           | `No errors were found.`             | https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F                 |
 | `CSS`            | Jigsaw CSS validator         | `No errors were found.`             | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrutibhudia97.github.io%2FProject-2---Rock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en                    |    
-| `JavaScript`     | Jshint JavaScript validator  | `There are 16 functions in this file. The function with the largest signature takes 2 arguments, while the median is 0. The largest function has 14 statements in it, while the median is 1.5. The most complex function has a cyclomatic complexity value of 20 while the median is 1.`                          | https://jshint.com/                   |   
+| `JavaScript`     | Jshint JavaScript validator  | ` No errors were found. There are 16 functions in this file. The function with the largest signature takes 2 arguments, while the median is 0. The largest function has 14 statements in it, while the median is 1.5. The most complex function has a cyclomatic complexity value of 20 while the median is 1.`                          | https://jshint.com/                   |   
 | `Accessibility`  | Lighthouse                   | `A score of 100 for accessibility.`                 |                    |  
 
   - __Screenshots for each Validator__
@@ -157,19 +160,26 @@ At the bottom of the screen in the footer are the rules of the game. The white b
 
 ### Unfixed bugs
 - When using inspect tool to check the format of the game on smaller screens the button text is present, but when the game was tested on an actual mobile device the button text was not present.
-- When running the game, the console warning of "DevTools failed to load source map" but the file cannot be accessed. This doesn't affect the functionality of the game.
+- When running the game, the console warning "DevTools failed to load source map" but the file cannot be accessed. This doesn't affect the functionality of the game.
 
 
 ### Deployment
 This site was successfully deployed on Github.
-The following steps were taken to deploy the site:
-- In GitHub, navigate to 'Settings' at the top of the screen.
-- Then navigate to 'Pages' on the menu to the left of the screen.
-- From the Source section, select 'Deploy from a branch.'
-- For Branch, select 'Main' and '/(root)'.
+#### The steps taken to deploy the site:
+ 1. In GitHub, navigate to 'Settings' at the top of the screen.
+ 2. Then navigate to 'Pages' on the menu to the left of the screen.
+ 3. From the Source section, select 'Deploy from a branch.'
+ 4. For Branch, select 'Main' and '/(root)'.
  
 This live link to the website:
 https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
+
+#### Steps for how to clone the branch:
+1. On the GitHub repository click "Code" on the top right
+2. Click the "local" tab
+3. Copy the URL
+4. Use command "git clone" and pass through the URL to where you want to clone the file
+5. The complete code should now be available on your local system for you to edit
 
 
 ## Credits
@@ -188,12 +198,13 @@ https://dhrutibhudia97.github.io/Project-2---Rock-Paper-Scissors-Lizard-Spock/
 
 - Youtube tutorial - "https://www.youtube.com/watch?v=jaVNP3nIAv0&ab_channel=freeCodeCamp.org" 
     - Assisted with JavaScript switch cases for the win and draw result outcomes.
-    - Adding function to buttons by adding event listeners.
+    - Adding function to the buttons by adding event listeners.
     - Assisted with making the border colour change temporary. 
     
 - Mentor meetings with Sandeep Aggarwal 
-    - Assisted with reducing the size of CSS and Javascript code by reducing repeated statements, replacing the lost outcomes of the switch case with the default setting being the lost result.
+    - Assisted with reducing the size of CSS and Javascript code by reducing repeated and unnecessary statements.
     - Helped with the animation duration function to the button border colour change style and implementing maximum rounds in the game.
+    - Helped with the reset button.
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#:~:text=The%20DOMContentLoaded%20event%20fires%20when,and%20subframes%20to%20finish%20loading.
     - Assisted with DOMContentLoaded code at the top of the javascript file.

@@ -4,7 +4,7 @@
     main();
   });
 
-// Animation duration of the border colour change.
+// Animation duration of the border colour change lasts 600 milliseconds.
 const _ANIMATION_DURATION = 600;
 
 // Maximum score that the user or computer can reach to end the game.
@@ -18,7 +18,7 @@ let currentComputerCounter = 0;
 const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 /**
- * The computer's choice is randomly generated out of the choice options using the math.random function.
+ * The computer's choice is randomly generated out of the choice options.
  */
 function getComputerChoice() {
     const randomlyGeneratedChoice = [Math.floor(Math.random() * CHOICES.length)];
