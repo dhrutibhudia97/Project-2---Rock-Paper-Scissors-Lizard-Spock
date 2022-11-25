@@ -24,9 +24,9 @@ body {
 /* Text Styling */
 #result-text,
 #user-prompt {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #000;
+    color: rgba(21, 21, 21, 0.79);
     padding-top: 15px;
 }
 
@@ -150,7 +150,7 @@ body {
     /* Text Styling */
     #result-text, 
     #user-prompt {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* Button Styling */
@@ -213,7 +213,7 @@ body {
 
     #result-text, 
     #user-prompt {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .button {

@@ -111,7 +111,7 @@ function game(userChoice) {
  */
 function won(userChoice, computerChoice) {
     incrementUserScore();
-    document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} CONGRATS YOU WIN :D`;
+    document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice}. CONGRATS YOU WIN :D`;
     
     //Add style to user-win result.
     //Code credited to the youtube tutorial: "https://www.youtube.com/watch?v=jaVNP3nIAv0" and code institutes 'love maths' module.
@@ -130,7 +130,7 @@ function won(userChoice, computerChoice) {
  */
 function lost(userChoice, computerChoice) {
     incrementComputerScore();
-    document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice} AWW YOU LOSE :(`;
+    document.getElementById("result-text").innerHTML = `You picked ${userChoice} & the Computer picked ${computerChoice}. AWW YOU LOSE :(`;
 
     //Add style to user-lose result.
     //Red border change animation lasts for 600 milliseconds.
